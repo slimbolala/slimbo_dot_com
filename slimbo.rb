@@ -17,8 +17,8 @@ __END__
     #header
       %h1
         Slimbolala.com
-      %h2
-        Stuff I Make and Do
+        %span{:class => "h1_sub"}
+          Stuff I Make and Do
     #main
       = yield
     #sidebar
