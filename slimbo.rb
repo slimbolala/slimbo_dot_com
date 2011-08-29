@@ -12,12 +12,21 @@ __END__
   %head
     %title
       Slimbolala.com
+    %link{:rel => "stylesheet", :href => "slimbo.css"}
   %body
     #header
       %h1
         Slimbolala.com
-    #body
+      %h2
+        Stuff I Make and Do
+    #main
       = yield
+    #sidebar
+      %p
+        This is a sidebar. It's for sidebar-ish stuff.
+    #footer
+      %p
+        This is a footer. It's for footer-ish stuff.
 
 @@ index
 %p
