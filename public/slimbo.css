@@ -20,7 +20,17 @@ body {
   float: left;
   border-right: 1px solid #aaaaaa;
   margin: 0em 0em 1em 0em;
-  padding: 0em 2em 0em 0em;
+  padding: 0em 1em 0em 0em;
+}
+.left_panel {
+  float: left;
+  clear: left;
+  width: 261;
+  margin: 0em 1em 0em 0em;
+}
+.right_panel {
+  float: left;
+  width: 287;
 }
 #footer, #sidebar {
   font-size: .809em;
@@ -66,5 +76,5 @@ p {
 .headshot {
   height: 57px;
   float: left;
-  margin: 0em .2em .2em 0em;
+  margin: 0em .em .2em 0em;
 }

@@ -27,14 +27,30 @@ __END__
       %p
         %img{:src => "slimbo.png", :class => "headshot", :alt => "Slimbo"}
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae consequat ante. Donec purus tortor, dapibus et gravida ut, consequat nec quam. Aliquam nunc tellus, venenatis id adipiscing sed, pharetra ac sapien. Nunc feugiat eleifend magna, vitae auctor mi sollicitudin nec. Nunc leo velit, bibendum vel ultricies in, porta eu nisi. Morbi vitae iaculis orci. Nam posuere libero lectus, eget laoreet augue. Suspendisse potenti. Nunc cursus tristique sollicitudin. Phasellus egestas malesuada lacinia. Ut dapibus dapibus blandit. Praesent viverra placerat odio, a suscipit justo aliquet sed.
+      %h3
+        Cras Enim Est
+      %p
+        Cras enim est, laoreet in vestibulum vitae, viverra ut sem. Cras at nisi sed urna tempus gravida tristique vitae nibh. Sed interdum eleifend interdum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In in felis ac lacus commodo tempor sed nec ligula. Proin enim risus, imperdiet sed accumsan sed, malesuada eu nulla. Aenean sit amet nisi et velit ultricies vestibulum. Phasellus facilisis diam ac quam ultricies quis elementum est blandit. Sed blandit vestibulum est, eget pulvinar leo hendrerit non. Suspendisse potenti. Curabitur non eros lorem, vel tristique odio. Ut sed metus enim. Nam venenatis dignissim commodo. Mauris aliquam dui in leo viverra blandit tristique erat commodo. 
     #footer
       %p
         Nam ullamcorper urna quis augue facilisis quis egestas diam fermentum. Ut pellentesque, lorem non sagittis tincidunt, nisl massa porttitor justo, ut auctor lectus nisi a lectus. Curabitur faucibus feugiat lectus porttitor ornare. Phasellus lacus neque, accumsan non lacinia at, bibendum vel lectus.
 
 @@ index
-%h3
-  Lorem Ipsum Dolor Sit Amet
-%p
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu tellus neque. Curabitur sollicitudin tellus vel quam accumsan quis lacinia lectus cursus. Cras blandit dictum urna quis dapibus. Maecenas consequat convallis risus at ornare. Morbi euismod, enim sit amet tempus facilisis, magna ante vestibulum velit, eget ullamcorper metus ipsum sed sapien. Nam cursus dictum orci a vehicula. Vestibulum euismod nibh sit amet arcu tincidunt condimentum. Vestibulum blandit lacinia odio, ac auctor ligula tincidunt scelerisque. Duis lacinia, orci in gravida sodales, sem velit semper sem, et auctor tellus turpis non dui. Aliquam erat volutpat. Praesent ullamcorper, augue at pretium pellentesque, purus quam auctor massa, vitae aliquam massa lectus in mauris. Integer aliquet leo lorem, et posuere nisl. Praesent commodo blandit diam, nec vehicula mi adipiscing pharetra. Etiam imperdiet posuere ante, scelerisque tincidunt risus dictum sed. Quisque ipsum diam, feugiat vel rutrum ut, iaculis laoreet diam.
-%p 
-  In non mauris vel lectus molestie ultrices. Proin pharetra sollicitudin pulvinar. Praesent vitae laoreet enim. Ut porttitor mollis condimentum. Vivamus nisi enim, blandit vel convallis id, venenatis a purus. Etiam feugiat lectus ornare enim imperdiet semper. Vivamus posuere pellentesque dui, eu varius lectus tincidunt vitae. In hac habitasse platea dictumst. Nunc ut auctor magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla ultricies erat sit amet urna dignissim pellentesque. Praesent hendrerit, diam eu laoreet venenatis, libero libero blandit dolor, a tempor nisl augue vitae sem. Nullam at lacus magna. 
+.left_panel
+  %h3
+    Lorem Ipsum
+  %p
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu tellus neque. Curabitur sollicitudin tellus vel quam accumsan quis lacinia lectus cursus. Cras blandit dictum urna quis dapibus. Maecenas consequat convallis risus at ornare. Morbi euismod, enim sit amet tempus facilisis, magna ante vestibulum velit, eget ullamcorper metus ipsum sed sapien. Nam cursus dictum orci a vehicula. Vestibulum euismod nibh sit amet arcu tincidunt condimentum.
+  %h3
+    In Non Mauris
+  %p
+    In non mauris vel lectus molestie ultrices. Proin pharetra sollicitudin pulvinar. Praesent vitae laoreet enim. Ut porttitor mollis condimentum. Vivamus nisi enim, blandit vel convallis id, venenatis a purus. Etiam feugiat lectus ornare enim imperdiet semper. Vivamus posuere pellentesque dui, eu varius lectus tincidunt vitae. 
+.right_panel
+  %h3
+    Vestibulum Blandit
+  %p
+    Vestibulum blandit lacinia odio, ac auctor ligula tincidunt scelerisque. Duis lacinia, orci in gravida sodales, sem velit semper sem, et auctor tellus turpis non dui. Aliquam erat volutpat. Praesent ullamcorper, augue at pretium pellentesque, purus quam auctor massa, vitae aliquam massa lectus in mauris. Integer aliquet leo lorem, et posuere nisl. Praesent commodo blandit diam, nec vehicula mi adipiscing pharetra. Etiam imperdiet posuere ante, scelerisque tincidunt risus dictum sed. Quisque ipsum diam, feugiat vel rutrum ut, iaculis laoreet diam.
+  %h3
+    In Hac Habitasse
+  %p
+    In hac habitasse platea dictumst. Nunc ut auctor magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla ultricies erat sit amet urna dignissim pellentesque. Praesent hendrerit, diam eu laoreet venenatis, libero libero blandit dolor, a tempor nisl augue vitae sem. Nullam at lacus magna. 
