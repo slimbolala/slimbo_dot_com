@@ -25,10 +25,11 @@ __END__
       %h3
         Lorem Ipsum Dolor Sit Amet
       %p
+        %img{:src => "slimbo.png", :class => "headshot", :alt => "Slimbo"}
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae consequat ante. Donec purus tortor, dapibus et gravida ut, consequat nec quam. Aliquam nunc tellus, venenatis id adipiscing sed, pharetra ac sapien. Nunc feugiat eleifend magna, vitae auctor mi sollicitudin nec. Nunc leo velit, bibendum vel ultricies in, porta eu nisi. Morbi vitae iaculis orci. Nam posuere libero lectus, eget laoreet augue. Suspendisse potenti. Nunc cursus tristique sollicitudin. Phasellus egestas malesuada lacinia. Ut dapibus dapibus blandit. Praesent viverra placerat odio, a suscipit justo aliquet sed.
     #footer
       %p
-        Nam ullamcorper urna quis augue facilisis quis egestas diam fermentum. Ut pellentesque, lorem non sagittis tincidunt, nisl massa porttitor justo, ut auctor lectus nisi a lectus. Curabitur faucibus feugiat lectus porttitor ornare. Phasellus lacus neque, accumsan non lacinia at, bibendum vel lectus. Suspendisse auctor massa vel neque tempus ullamcorper. Aliquam erat volutpat. Duis ut purus urna, rutrum ultrices eros. Praesent aliquet hendrerit quam non vehicula. Suspendisse rhoncus commodo metus ac tincidunt. Etiam facilisis, mauris luctus pretium porta, urna urna aliquet sapien, convallis adipiscing libero arcu eu nulla. Vestibulum sit amet nisi ac nibh tincidunt rhoncus. 
+        Nam ullamcorper urna quis augue facilisis quis egestas diam fermentum. Ut pellentesque, lorem non sagittis tincidunt, nisl massa porttitor justo, ut auctor lectus nisi a lectus. Curabitur faucibus feugiat lectus porttitor ornare. Phasellus lacus neque, accumsan non lacinia at, bibendum vel lectus.
 
 @@ index
 %h3

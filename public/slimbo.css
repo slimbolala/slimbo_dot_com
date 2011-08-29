@@ -63,3 +63,8 @@ h3 {
 p {
   margin: 0em 0em 1em 0em;
 }
+.headshot {
+  height: 57px;
+  float: left;
+  margin: 0em .2em .2em 0em;
+}
