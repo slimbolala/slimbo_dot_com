@@ -1,0 +1,52 @@
+body {
+	font-family: Georgia;
+	width: 900px;
+	vertical-align: middle;
+	text-align: left;
+	margin: 0 auto;
+}
+#main {
+  width: 700px;
+  float: left;
+}
+#sidebar {
+  width: 200px;
+  float: left;
+  font-size: .8em;
+  color: #666666;
+}
+#footer {
+  clear: left;
+  font-size: .8em;
+  color: #666666;
+  border-top: 1px solid #666666;
+  border-color: #666666;
+  padding: .5em 0 0 0;
+  margin: 4em 0 0 0;
+}
+a {
+	color: #990000;
+  text-decoration: none;
+}
+h1, h2, h3 {
+  font-weight: normal;
+}
+h2, h3 {
+  font-style: italic;
+}
+h1 {
+	font-size: 2em;
+  margin: 0em 0em .4em 0em;
+}
+h2 {
+  font-size: 1.2em;
+  font-style: italic;
+  color: #666666;
+  margin: 0em 0em 0em 0em;
+}
+h3 {
+  font-size: 1.4em;
+}
+p {
+  margin: 2em 0em 1em 0em;
+}
