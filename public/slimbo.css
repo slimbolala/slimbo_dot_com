@@ -1,28 +1,33 @@
+/* Modular Scale
+----------------------
+  16px @ 1:1.618	
+  8px @ 1:1.618	
+  http://modularscale.com/scale/?px1=16&px2=8&ra1=1.618&ra2=0
+----------------------*/
 body {
-	font-family: Georgia;
-	width: 900px;
+	width: 980px;
 	vertical-align: middle;
-	text-align: left;
 	margin: 0 auto;
+	text-align: left;
+  font-size: 16px;
+	font-family: Georgia;
 }
 #main {
-  width: 700px;
+  width: 606px;
   float: left;
 }
-#sidebar {
-  width: 200px;
-  float: left;
-  font-size: .8em;
+#footer, #sidebar {
+  font-size: .809em;
   color: #666666;
+}
+#sidebar {
+  width: 374px;
+  float: left;
 }
 #footer {
   clear: left;
-  font-size: .8em;
-  color: #666666;
   border-top: 1px solid #666666;
-  border-color: #666666;
-  padding: .5em 0 0 0;
-  margin: 4em 0 0 0;
+  margin: 0em 0em 0em 0em;
 }
 a {
 	color: #990000;
@@ -35,18 +40,19 @@ h2, h3 {
   font-style: italic;
 }
 h1 {
-	font-size: 2em;
-  margin: 0em 0em .4em 0em;
+	font-size: 4.236em;
+  margin: 0em 0em 0em 0em;
 }
 h2 {
-  font-size: 1.2em;
+  font-size: 1.618em;
   font-style: italic;
   color: #666666;
   margin: 0em 0em 0em 0em;
 }
 h3 {
-  font-size: 1.4em;
+  font-size: 1.309em;
+  margin: 0em 0em 0em 0em;
 }
 p {
-  margin: 2em 0em 1em 0em;
+  margin: 0em 0em 0em 0em;
 }
