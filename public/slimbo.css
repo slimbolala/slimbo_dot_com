@@ -91,11 +91,15 @@ img {
 table {
   font-size: 1em;
   text-align: left;
+  padding: .309em 0em;
+}
+th, td {
+  padding: .309em 0em;
 }
 th {
   font-weight: normal;
   font-style: italic;
-  padding: 0em 1.618em 0em 0em;
+  padding: 0em .809em 0em 0em;
   color: #777777;
 }
 #hr {

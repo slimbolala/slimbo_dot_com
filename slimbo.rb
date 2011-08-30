@@ -68,19 +68,19 @@ __END__
       %table
         %tr
           %th
-            blog
+            Blog:
           %td
             %a{:href => "http://slimbolala.blogspot.com/"}
               slimbolala.blogspot.com
         %tr
           %th
-            email
+            Email:
           %td
             %a{:href => "mailto:____@____.com"}
               &#115;&#108;&#105;&#109;&#98;&#111;&#108;&#97;&#108;&#97;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;
         %tr
           %th
-            github
+            GitHub:
           %td
             %a{:href => "https://github.com/slimbolala"}
               github.com/slimbolala
