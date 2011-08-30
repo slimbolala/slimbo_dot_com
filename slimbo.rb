@@ -30,7 +30,7 @@ __END__
           Stuff I Make and Do
     #nav
       #nav_item
-        %a{:href => "____"}
+        %a{:href => "http://slimbolala.blogspot.com/"}
           Blog
       #nav_item
         %a{:href => "____"}
@@ -64,6 +64,26 @@ __END__
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae consequat ante. Donec purus tortor, dapibus et gravida ut, consequat nec quam. Aliquam nunc tellus, venenatis id adipiscing sed, pharetra ac sapien. Nunc feugiat eleifend magna, vitae auctor mi sollicitudin nec.
         %a{:href => "____"}
           more...
+      #hr
+      %table
+        %tr
+          %th
+            blog
+          %td
+            %a{:href => "http://slimbolala.blogspot.com/"}
+              slimbolala.blogspot.com
+        %tr
+          %th
+            email
+          %td
+            %a{:href => "mailto:____@____.com"}
+              &#115;&#108;&#105;&#109;&#98;&#111;&#108;&#97;&#108;&#97;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;
+        %tr
+          %th
+            github
+          %td
+            %a{:href => "https://github.com/slimbolala"}
+              github.com/slimbolala
       #hr
       :javascript
         $(document).ready(function () {
