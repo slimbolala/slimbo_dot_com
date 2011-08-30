@@ -99,6 +99,7 @@ th, td {
 th {
   font-weight: normal;
   font-style: italic;
+  font-size: .809em;
   padding: 0em .809em 0em 0em;
   color: #777777;
 }
@@ -117,7 +118,7 @@ th {
 	padding: 0;
 }
 .rssRow { 
-  margin: 0em 0em .809em 0em;
+  padding: .403em;
 }
 .rssRow h4 { 
 }
@@ -125,4 +126,7 @@ th {
 	font-size: .809em;
 	color: #666;
 	margin: 0.2em 0 0.4em 0;
+}
+.odd {
+  background-color: #eeeeee;
 }
