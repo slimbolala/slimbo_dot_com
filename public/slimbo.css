@@ -19,8 +19,8 @@ body {
   font-size: .809em;
 }
 #nav {
-  height: 2.118em;
-  line-height: 2.118em;
+  height: 2.618em;
+  line-height: 2.618em;
   border-top: 1px solid #aaaaaa;
   border-bottom: 1px solid #aaaaaa;
   font-style: italic;
@@ -41,6 +41,9 @@ body {
   width: 271;                 /* 606/2 - 16 */
   height: 287;
   margin: 0em 2em 2em 0em;
+}
+.small {
+	font-size: .809em;
 }
 #sidebar {
   width: 342px;               /* 374 - 32px */

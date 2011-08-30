@@ -31,19 +31,19 @@ __END__
     #nav
       #nav_item
         %a{:href => "____"}
-          Lorem Ipsum
+          Blog
       #nav_item
         %a{:href => "____"}
-          Dolor Sit
+          Illos
       #nav_item
         %a{:href => "____"}
-          Consectetur 
+          Photos
       #nav_item
         %a{:href => "____"}
-          Adipiscing 
+          Geek
       #nav_item
         %a{:href => "____"}
-          Elit
+          Merch
     #main
       = yield
     #sidebar
@@ -73,25 +73,25 @@ __END__
       Lorem Ipsum
   %p
     %img{:src => "images/map.png", :alt => "funny thing map"}
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu tellus neque. Curabitur sollicitudin tellus vel quam accumsan quis lacinia lectus cursus. Cras blandit dictum urna quis dapibus. Maecenas consequat convallis risus at ornare.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span class="small">Fusce eu tellus neque. Curabitur sollicitudin tellus vel quam accumsan quis lacinia lectus cursus. Cras blandit dictum urna quis dapibus. Maecenas consequat convallis risus at ornare. Curabitur vel odio arcu. In hendrerit leo ut quam gravida consectetur. Pellentesque faucibus, diam id sollicitudin gravida, neque justo ultrices est, ut sagittis magna ligula sed felis. Nam eget ipsum et felis iaculis tristique. Morbi malesuada elit a arcu pretium hendrerit.</span>
 .panel
   %a{:href => "____"}
     %h3
       In Non Mauris
   %p
     %img{:src => "images/koala.jpg", :alt => "koala"}
-    In non mauris vel lectus molestie ultrices. Proin pharetra sollicitudin pulvinar. Praesent vitae laoreet enim. Ut porttitor mollis condimentum. Vivamus nisi enim, blandit vel convallis id, venenatis a purus. Etiam feugiat lectus ornare enim imperdiet semper. Vivamus posuere pellentesque dui, eu varius lectus tincidunt vitae. 
+    In non mauris vel lectus molestie ultrices. <span class="small">Proin pharetra sollicitudin pulvinar. Praesent vitae laoreet enim. Ut porttitor mollis condimentum. Vivamus nisi enim, blandit vel convallis id, venenatis a purus. Etiam feugiat lectus ornare enim imperdiet semper. Vivamus posuere pellentesque dui, eu varius lectus tincidunt vitae. Etiam fringilla facilisis porta. Nunc cursus nulla at neque consectetur ac posuere nisl tincidunt.</span> 
 .panel
   %a{:href => "____"}
     %h3
       Vestibulum Blandit
   %p
     %img{:src => "images/willow.jpg", :alt => "willow"}
-    Vestibulum blandit lacinia odio, ac auctor ligula tincidunt scelerisque. Duis lacinia, orci in gravida sodales, sem velit semper sem, et auctor tellus turpis non dui. Aliquam erat volutpat. Praesent ullamcorper, augue at pretium pellentesque, purus quam auctor massa, vitae aliquam massa lectus in mauris. Integer aliquet leo lorem, et posuere nisl.
+    Vestibulum blandit lacinia odio, ac auctor ligula tincidunt scelerisque. <span class="small">Duis lacinia, orci in gravida sodales, sem velit semper sem, et auctor tellus turpis non dui. Aliquam erat volutpat. Praesent ullamcorper, augue at pretium pellentesque, purus quam auctor massa, vitae aliquam massa lectus in mauris. Integer aliquet leo lorem, et posuere nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed eleifend euismod massa at fringilla.</span>
 .panel
   %a{:href => "____"}
     %h3
       In Hac Habitasse
   %p
     %img{:src => "images/7_inch.png", :alt => "7 inch"}
-    In hac habitasse platea dictumst. Nunc ut auctor magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla ultricies erat sit amet urna dignissim pellentesque. Praesent hendrerit, diam eu laoreet venenatis, libero libero blandit dolor, a tempor nisl augue vitae sem.
+    In hac habitasse platea dictumst. <span class="small">Nunc ut auctor magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla ultricies erat sit amet urna dignissim pellentesque. Praesent hendrerit, diam eu laoreet venenatis, libero libero blandit dolor, a tempor nisl augue vitae sem. Cras dignissim metus odio, quis aliquam orci.</span>
