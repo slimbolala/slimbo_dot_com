@@ -22,15 +22,11 @@ body {
   margin: 0em 0em 1em 0em;
   padding: 0em 0em 0em 0em;
 }
-.left_panel {
+.panel {
   float: left;
-  clear: left;
   width: 287;                 /* 606/2 - 16 */
+  height: 287;
   margin: 0em 1em 0em 0em;
-}
-.right_panel {
-  float: left;
-  width: 287;                 /* 606/2 - 16 */
 }
 #footer, #sidebar {
   font-size: .809em;
@@ -73,8 +69,8 @@ h3 {
 p {
   margin: 0em 0em 1em 0em;
 }
-.headshot {
-  height: 57px;
+img {
+  height: 68px;
   float: left;
-  margin: 0em .em .2em 0em;
+  margin: 0em .5em .2em 0em;
 }

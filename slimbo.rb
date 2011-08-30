@@ -36,20 +36,22 @@ __END__
         Nam ullamcorper urna quis augue facilisis quis egestas diam fermentum. Ut pellentesque, lorem non sagittis tincidunt, nisl massa porttitor justo, ut auctor lectus nisi a lectus. Curabitur faucibus feugiat lectus porttitor ornare. Phasellus lacus neque, accumsan non lacinia at, bibendum vel lectus.
 
 @@ index
-.left_panel
+.panel
   %h3
     Lorem Ipsum
   %p
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu tellus neque. Curabitur sollicitudin tellus vel quam accumsan quis lacinia lectus cursus. Cras blandit dictum urna quis dapibus. Maecenas consequat convallis risus at ornare. Morbi euismod, enim sit amet tempus facilisis, magna ante vestibulum velit, eget ullamcorper metus ipsum sed sapien. Nam cursus dictum orci a vehicula. Vestibulum euismod nibh sit amet arcu tincidunt condimentum.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu tellus neque. Curabitur sollicitudin tellus vel quam accumsan quis lacinia lectus cursus. Cras blandit dictum urna quis dapibus. Maecenas consequat convallis risus at ornare. Morbi euismod, enim sit amet tempus facilisis, magna ante vestibulum velit, eget ullamcorper metus ipsum sed sapien.
+.panel
   %h3
     In Non Mauris
   %p
     In non mauris vel lectus molestie ultrices. Proin pharetra sollicitudin pulvinar. Praesent vitae laoreet enim. Ut porttitor mollis condimentum. Vivamus nisi enim, blandit vel convallis id, venenatis a purus. Etiam feugiat lectus ornare enim imperdiet semper. Vivamus posuere pellentesque dui, eu varius lectus tincidunt vitae. 
-.right_panel
+.panel
   %h3
     Vestibulum Blandit
   %p
-    Vestibulum blandit lacinia odio, ac auctor ligula tincidunt scelerisque. Duis lacinia, orci in gravida sodales, sem velit semper sem, et auctor tellus turpis non dui. Aliquam erat volutpat. Praesent ullamcorper, augue at pretium pellentesque, purus quam auctor massa, vitae aliquam massa lectus in mauris. Integer aliquet leo lorem, et posuere nisl. Praesent commodo blandit diam, nec vehicula mi adipiscing pharetra. Etiam imperdiet posuere ante, scelerisque tincidunt risus dictum sed. Quisque ipsum diam, feugiat vel rutrum ut, iaculis laoreet diam.
+    Vestibulum blandit lacinia odio, ac auctor ligula tincidunt scelerisque. Duis lacinia, orci in gravida sodales, sem velit semper sem, et auctor tellus turpis non dui. Aliquam erat volutpat. Praesent ullamcorper, augue at pretium pellentesque, purus quam auctor massa, vitae aliquam massa lectus in mauris. Integer aliquet leo lorem, et posuere nisl.
+.panel
   %h3
     In Hac Habitasse
   %p
