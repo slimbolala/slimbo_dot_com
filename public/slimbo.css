@@ -16,21 +16,21 @@ body {
   padding: 1em 0em 2em 0em;
 }
 #main {
-  width: 574px;               /* 606 - 3px */
+  width: 606px;               /* 980/1.618 */ 
   float: left;
   border-right: 1px solid #aaaaaa;
   margin: 0em 0em 1em 0em;
-  padding: 0em 1em 0em 0em;
+  padding: 0em 0em 0em 0em;
 }
 .left_panel {
   float: left;
   clear: left;
-  width: 261;
+  width: 287;                 /* 606/2 - 16 */
   margin: 0em 1em 0em 0em;
 }
 .right_panel {
   float: left;
-  width: 287;
+  width: 287;                 /* 606/2 - 16 */
 }
 #footer, #sidebar {
   font-size: .809em;
@@ -68,7 +68,7 @@ h1 {
 }
 h3 {
   font-size: 1.309em;
-  margin: 0em 0em 1em 0em;
+  margin: 0em 0em .5em 0em;
 }
 p {
   margin: 0em 0em 1em 0em;
