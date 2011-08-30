@@ -38,9 +38,9 @@ body {
 }
 .panel {
   float: left;
-  width: 287;                 /* 606/2 - 16 */
+  width: 271;                 /* 606/2 - 16 */
   height: 287;
-  margin: 0em 1em 0em 0em;
+  margin: 0em 2em 2em 0em;
 }
 #sidebar {
   width: 342px;               /* 374 - 32px */
@@ -87,6 +87,7 @@ img {
 }
 #hr {
   border-top: 1px solid #aaaaaa;
+  height: 0px;
 }
 .rssHeader { 
   font-size: 1.309em;
