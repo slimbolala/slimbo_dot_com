@@ -13,6 +13,15 @@ __END__
     %title
       Slimbolala.com
     %link{:rel => "stylesheet", :href => "slimbo.css"}
+    %script{:type => "text/javascript",
+            :src  => "//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"}
+    %script{:src => "jquery.zrssfeed.min.js", :type => "text/javascript"}
+    :javascript
+      $(document).ready(function () {
+        $('#test').rssfeed('http://feeds.reuters.com/reuters/oddlyEnoughNews', {
+          limit: 5
+        });
+      });
   %body
     #header
       %h1
@@ -43,6 +52,13 @@ __END__
       %p
         %img{:src => "images/slimbo.png", :alt => "Slimbo"}
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae consequat ante. Donec purus tortor, dapibus et gravida ut, consequat nec quam. Aliquam nunc tellus, venenatis id adipiscing sed, pharetra ac sapien. Nunc feugiat eleifend magna, vitae auctor mi sollicitudin nec. Nunc leo velit, bibendum vel ultricies in, porta eu nisi. Morbi vitae iaculis orci. Nam posuere libero lectus, eget laoreet augue. Suspendisse potenti. Nunc cursus tristique sollicitudin. Phasellus egestas malesuada lacinia. Ut dapibus dapibus blandit. Praesent viverra placerat odio, a suscipit justo aliquet sed.
+      :javascript
+        $(document).ready(function () {
+          $('#test').rssfeed('http://feeds.reuters.com/reuters/oddlyEnoughNews', {
+            limit: 5
+          });
+        });
+      #test
       %h3
         Cras Enim Est
       %p
