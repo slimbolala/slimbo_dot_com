@@ -40,6 +40,15 @@ __END__
           Photos
       #nav_item
         %a{:href => "____"}
+          Music
+      #nav_item
+        %a{:href => "____"}
+          Design
+      #nav_item
+        %a{:href => "____"}
+          Writing
+      #nav_item
+        %a{:href => "____"}
           Geek
       #nav_item
         %a{:href => "____"}
