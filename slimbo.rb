@@ -25,7 +25,7 @@ __END__
       %h3
         Lorem Ipsum Dolor Sit Amet
       %p
-        %img{:src => "slimbo.png", :class => "headshot", :alt => "Slimbo"}
+        %img{:src => "images/slimbo.png", :alt => "Slimbo"}
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae consequat ante. Donec purus tortor, dapibus et gravida ut, consequat nec quam. Aliquam nunc tellus, venenatis id adipiscing sed, pharetra ac sapien. Nunc feugiat eleifend magna, vitae auctor mi sollicitudin nec. Nunc leo velit, bibendum vel ultricies in, porta eu nisi. Morbi vitae iaculis orci. Nam posuere libero lectus, eget laoreet augue. Suspendisse potenti. Nunc cursus tristique sollicitudin. Phasellus egestas malesuada lacinia. Ut dapibus dapibus blandit. Praesent viverra placerat odio, a suscipit justo aliquet sed.
       %h3
         Cras Enim Est
@@ -40,19 +40,23 @@ __END__
   %h3
     Lorem Ipsum
   %p
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu tellus neque. Curabitur sollicitudin tellus vel quam accumsan quis lacinia lectus cursus. Cras blandit dictum urna quis dapibus. Maecenas consequat convallis risus at ornare. Morbi euismod, enim sit amet tempus facilisis, magna ante vestibulum velit, eget ullamcorper metus ipsum sed sapien.
+    %img{:src => "images/map.png", :alt => "funny thing map"}
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu tellus neque. Curabitur sollicitudin tellus vel quam accumsan quis lacinia lectus cursus. Cras blandit dictum urna quis dapibus. Maecenas consequat convallis risus at ornare.
 .panel
   %h3
     In Non Mauris
   %p
+    %img{:src => "images/koala.jpg", :alt => "koala"}
     In non mauris vel lectus molestie ultrices. Proin pharetra sollicitudin pulvinar. Praesent vitae laoreet enim. Ut porttitor mollis condimentum. Vivamus nisi enim, blandit vel convallis id, venenatis a purus. Etiam feugiat lectus ornare enim imperdiet semper. Vivamus posuere pellentesque dui, eu varius lectus tincidunt vitae. 
 .panel
   %h3
     Vestibulum Blandit
   %p
+    %img{:src => "images/willow.jpg", :alt => "willow"}
     Vestibulum blandit lacinia odio, ac auctor ligula tincidunt scelerisque. Duis lacinia, orci in gravida sodales, sem velit semper sem, et auctor tellus turpis non dui. Aliquam erat volutpat. Praesent ullamcorper, augue at pretium pellentesque, purus quam auctor massa, vitae aliquam massa lectus in mauris. Integer aliquet leo lorem, et posuere nisl.
 .panel
   %h3
     In Hac Habitasse
   %p
-    In hac habitasse platea dictumst. Nunc ut auctor magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla ultricies erat sit amet urna dignissim pellentesque. Praesent hendrerit, diam eu laoreet venenatis, libero libero blandit dolor, a tempor nisl augue vitae sem. Nullam at lacus magna. 
+    %img{:src => "images/7_inch.png", :alt => "7 inch"}
+    In hac habitasse platea dictumst. Nunc ut auctor magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla ultricies erat sit amet urna dignissim pellentesque. Praesent hendrerit, diam eu laoreet venenatis, libero libero blandit dolor, a tempor nisl augue vitae sem.
