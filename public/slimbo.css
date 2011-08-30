@@ -13,14 +13,25 @@ body {
 	font-family: Georgia;
 }
 #header {
-  padding: 1em 0em 2em 0em;
+  padding: 1em 0em .4em 0em;
+}
+#nav {
+  height: 2.118em;
+  line-height: 2.118em;
+  border-top: 1px solid #aaaaaa;
+  border-bottom: 1px solid #aaaaaa;
+  margin: 0em 0em 1em 0em;
+  font-style: italic;
+}
+#nav_item {
+  float: left;
+  width: 11.089em;
 }
 #main {
   width: 606px;               /* 980/1.618 */ 
   float: left;
   border-right: 1px solid #aaaaaa;
   margin: 0em 0em 1em 0em;
-  padding: 0em 0em 0em 0em;
 }
 .panel {
   float: left;

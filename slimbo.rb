@@ -19,6 +19,17 @@ __END__
         Slimbolala.com
         %span{:class => "h1_sub"}
           Stuff I Make and Do
+    #nav
+      #nav_item
+        Lorem Ipsum
+      #nav_item
+        Dolor Sit
+      #nav_item
+        Consectetur 
+      #nav_item
+        Adipiscing 
+      #nav_item
+        Elit
     #main
       = yield
     #sidebar
