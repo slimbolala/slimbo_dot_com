@@ -21,15 +21,20 @@ __END__
           Stuff I Make and Do
     #nav
       #nav_item
-        Lorem Ipsum
+        %a{:href => "____"}
+          Lorem Ipsum
       #nav_item
-        Dolor Sit
+        %a{:href => "____"}
+          Dolor Sit
       #nav_item
-        Consectetur 
+        %a{:href => "____"}
+          Consectetur 
       #nav_item
-        Adipiscing 
+        %a{:href => "____"}
+          Adipiscing 
       #nav_item
-        Elit
+        %a{:href => "____"}
+          Elit
     #main
       = yield
     #sidebar
@@ -48,26 +53,30 @@ __END__
 
 @@ index
 .panel
-  %h3
-    Lorem Ipsum
+  %a{:href => "____"}
+    %h3
+      Lorem Ipsum
   %p
     %img{:src => "images/map.png", :alt => "funny thing map"}
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu tellus neque. Curabitur sollicitudin tellus vel quam accumsan quis lacinia lectus cursus. Cras blandit dictum urna quis dapibus. Maecenas consequat convallis risus at ornare.
 .panel
-  %h3
-    In Non Mauris
+  %a{:href => "____"}
+    %h3
+      In Non Mauris
   %p
     %img{:src => "images/koala.jpg", :alt => "koala"}
     In non mauris vel lectus molestie ultrices. Proin pharetra sollicitudin pulvinar. Praesent vitae laoreet enim. Ut porttitor mollis condimentum. Vivamus nisi enim, blandit vel convallis id, venenatis a purus. Etiam feugiat lectus ornare enim imperdiet semper. Vivamus posuere pellentesque dui, eu varius lectus tincidunt vitae. 
 .panel
-  %h3
-    Vestibulum Blandit
+  %a{:href => "____"}
+    %h3
+      Vestibulum Blandit
   %p
     %img{:src => "images/willow.jpg", :alt => "willow"}
     Vestibulum blandit lacinia odio, ac auctor ligula tincidunt scelerisque. Duis lacinia, orci in gravida sodales, sem velit semper sem, et auctor tellus turpis non dui. Aliquam erat volutpat. Praesent ullamcorper, augue at pretium pellentesque, purus quam auctor massa, vitae aliquam massa lectus in mauris. Integer aliquet leo lorem, et posuere nisl.
 .panel
-  %h3
-    In Hac Habitasse
+  %a{:href => "____"}
+    %h3
+      In Hac Habitasse
   %p
     %img{:src => "images/7_inch.png", :alt => "7 inch"}
     In hac habitasse platea dictumst. Nunc ut auctor magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla ultricies erat sit amet urna dignissim pellentesque. Praesent hendrerit, diam eu laoreet venenatis, libero libero blandit dolor, a tempor nisl augue vitae sem.

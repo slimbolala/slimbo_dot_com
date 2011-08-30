@@ -13,19 +13,22 @@ body {
 	font-family: Georgia;
 }
 #header {
-  padding: 1em 0em .4em 0em;
+  padding: 1em 0em .382em 0em;
+}
+#nav, #footer, #sidebar {
+  font-size: .809em;
 }
 #nav {
   height: 2.118em;
   line-height: 2.118em;
   border-top: 1px solid #aaaaaa;
   border-bottom: 1px solid #aaaaaa;
-  margin: 0em 0em 1em 0em;
   font-style: italic;
+  margin: 0em 0em 2em 0em;
 }
 #nav_item {
   float: left;
-  width: 11.089em;
+  width: 14.515em;
 }
 #main {
   width: 606px;               /* 980/1.618 */ 
@@ -38,9 +41,6 @@ body {
   width: 287;                 /* 606/2 - 16 */
   height: 287;
   margin: 0em 1em 0em 0em;
-}
-#footer, #sidebar {
-  font-size: .809em;
 }
 #sidebar {
   width: 342px;               /* 374 - 32px */
