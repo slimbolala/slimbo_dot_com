@@ -52,7 +52,9 @@ __END__
           About Me 
       %p
         %img{:src => "images/slimbo.png", :alt => "Slimbo"}
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae consequat ante. Donec purus tortor, dapibus et gravida ut, consequat nec quam. Aliquam nunc tellus, venenatis id adipiscing sed, pharetra ac sapien. Nunc feugiat eleifend magna, vitae auctor mi sollicitudin nec. Nunc leo velit, bibendum vel ultricies in, porta eu nisi. 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae consequat ante. Donec purus tortor, dapibus et gravida ut, consequat nec quam. Aliquam nunc tellus, venenatis id adipiscing sed, pharetra ac sapien. Nunc feugiat eleifend magna, vitae auctor mi sollicitudin nec.
+        %a{:href => "____"}
+          more...
       #hr
       :javascript
         $(document).ready(function () {
