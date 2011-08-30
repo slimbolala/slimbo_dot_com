@@ -57,7 +57,7 @@ a {
 	color: #990000;
   text-decoration: none;
 }
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-weight: normal;
 }
 h2, h3 {
@@ -78,48 +78,33 @@ h3 {
   margin: 0em 0em .5em 0em;
 }
 p {
-  margin: 0em 0em 1em 0em;
+  margin: 0em 0em 2em 0em;
 }
 img {
   height: 5.5em; 
   float: left;
   margin: 0em .5em .2em 0em;
 }
-.rssFeed {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 90%;
-	margin: 2em 3em;
+#hr {
+  border-top: 1px solid #aaaaaa;
 }
-.rssFeed a {
-	color: #444;
-	text-decoration: none;
+.rssHeader { 
+  font-size: 1.309em;
+  font-style: italic;
+  margin: 0em 0em .5em 0em;
 }
-.rssFeed a:hover {
-	color: #000;
-	text-decoration: underline;
-}
-
-.rssHeader { padding: 0.2em 0; }
-
-.rssBody { border: 1px solid #999; }
 .rssBody ul { list-style: none; }
 .rssBody ul, .rssRow, .rssRow h4, .rssRow p {
 	margin: 0;
 	padding: 0;
 }
-
-.rssRow { padding: 0.8em; }
-.rssRow h4 { font-size: 1.1em; }
+.rssRow { 
+  margin: 0em 0em .809em 0em;
+}
+.rssRow h4 { 
+}
 .rssRow div {
-	font-size: 90%;
+	font-size: .809em;
 	color: #666;
 	margin: 0.2em 0 0.4em 0;
-}
-
-.odd { background-color: #e8e8fc; }
-.even { background-color: #d4d4e8; }
-
-.rssRow .rssMedia {
-	padding: 0.5em;
-	font-size: 1em;
 }

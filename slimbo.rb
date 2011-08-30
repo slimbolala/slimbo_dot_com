@@ -47,22 +47,21 @@ __END__
     #main
       = yield
     #sidebar
-      %h3
-        Lorem Ipsum Dolor Sit Amet
+      %a{:href => "____"}
+        %h3
+          Lorem Ipsum Dolor Sit Amet
       %p
         %img{:src => "images/slimbo.png", :alt => "Slimbo"}
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae consequat ante. Donec purus tortor, dapibus et gravida ut, consequat nec quam. Aliquam nunc tellus, venenatis id adipiscing sed, pharetra ac sapien. Nunc feugiat eleifend magna, vitae auctor mi sollicitudin nec. Nunc leo velit, bibendum vel ultricies in, porta eu nisi. Morbi vitae iaculis orci. Nam posuere libero lectus, eget laoreet augue. Suspendisse potenti. Nunc cursus tristique sollicitudin. Phasellus egestas malesuada lacinia. Ut dapibus dapibus blandit. Praesent viverra placerat odio, a suscipit justo aliquet sed.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae consequat ante. Donec purus tortor, dapibus et gravida ut, consequat nec quam. Aliquam nunc tellus, venenatis id adipiscing sed, pharetra ac sapien. Nunc feugiat eleifend magna, vitae auctor mi sollicitudin nec. Nunc leo velit, bibendum vel ultricies in, porta eu nisi. 
+      #hr
       :javascript
         $(document).ready(function () {
-          $('#test').rssfeed('http://feeds.reuters.com/reuters/oddlyEnoughNews', {
+          $('#slimbo_feed').rssfeed('http://slimbolala.blogspot.com/feeds/posts/default', {
             limit: 5
           });
         });
-      #test
-      %h3
-        Cras Enim Est
       %p
-        Cras enim est, laoreet in vestibulum vitae, viverra ut sem. Cras at nisi sed urna tempus gravida tristique vitae nibh. Sed interdum eleifend interdum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In in felis ac lacus commodo tempor sed nec ligula. Proin enim risus, imperdiet sed accumsan sed, malesuada eu nulla. Aenean sit amet nisi et velit ultricies vestibulum. Phasellus facilisis diam ac quam ultricies quis elementum est blandit. Sed blandit vestibulum est, eget pulvinar leo hendrerit non. Suspendisse potenti. Curabitur non eros lorem, vel tristique odio. Ut sed metus enim. Nam venenatis dignissim commodo. Mauris aliquam dui in leo viverra blandit tristique erat commodo. 
+        #slimbo_feed
     #footer
       %p
         Nam ullamcorper urna quis augue facilisis quis egestas diam fermentum. Ut pellentesque, lorem non sagittis tincidunt, nisl massa porttitor justo, ut auctor lectus nisi a lectus. Curabitur faucibus feugiat lectus porttitor ornare. Phasellus lacus neque, accumsan non lacinia at, bibendum vel lectus.
