@@ -118,7 +118,7 @@ th {
 	padding: 0;
 }
 .rssRow { 
-  padding: .403em;
+  padding: .403em .403em .809em .403em;
 }
 .rssRow h4 { 
 }
