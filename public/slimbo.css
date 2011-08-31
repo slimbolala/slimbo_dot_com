@@ -57,7 +57,7 @@ body {
   color: #aaaaaa;
 }
 a {
-	color: #990000;
+	color: #662200;
   text-decoration: none;
 }
 h1, h2, h3, h4 {
@@ -95,10 +95,12 @@ table {
 }
 font-style: italic;
 th, td {
-  padding: .309em 0em;
+  margin: 2em 0em;
+  padding: 1.5em 0em;
   font-style: italic;
 }
 th {
+  height: 2.118em;
   font-weight: normal;
   font-style: italic;
   font-size: .809em;
