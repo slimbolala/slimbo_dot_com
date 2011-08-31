@@ -5,6 +5,10 @@ get '/' do
   haml :index
 end
 
+get '*' do
+  redirect to('/')
+end
+
 __END__
 
 @@ layout
