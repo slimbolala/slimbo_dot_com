@@ -33,7 +33,6 @@ body {
 #main {
   width: 606px;               /* 980/1.618 */ 
   float: left;
-  border-right: 1px solid #cccccc;
   margin: 0em 0em 1em 0em;
 }
 .panel {
@@ -48,7 +47,9 @@ body {
 #sidebar {
   width: 342px;               /* 374 - 32px */
   float: left;
+  border-left: 1px solid #cccccc;
   padding: 0em 0em 0em 2em;
+  margin: 0em 0em 2em 0em;
 }
 #footer {
   clear: left;
@@ -84,7 +85,7 @@ p {
   margin: 0em 0em 2em 0em;
 }
 img {
-  height: 5.5em; 
+  height: 8.971em; 
   float: left;
   margin: 0em .5em .2em 0em;
 }
@@ -101,7 +102,6 @@ th, td {
 th {
   height: 2.118em;
   font-weight: normal;
-  font-style: italic;
   font-size: .809em;
   padding: 0em .809em 0em 0em;
   color: #aaaaaa;
@@ -110,12 +110,9 @@ th {
   border-top: 1px solid #cccccc;
   height: 0px;
 }
-.rssHeader { 
-  font-size: 1.309em;
-  font-style: italic;
-  margin: 0em 0em .5em 0em;
+.rssBody ul { 
+  list-style: none; 
 }
-.rssBody ul { list-style: none; }
 .rssBody ul, .rssRow, .rssRow h4, .rssRow p {
 	margin: 0;
 	padding: 0;
@@ -123,13 +120,18 @@ th {
 .rssRow { 
   padding: .403em .403em .809em .403em;
 }
-.rssRow h4 { 
-}
 .rssRow div {
 	font-size: .809em;
 	color: #666;
 	margin: 0.2em 0 0.4em 0;
 }
-.even {
+.odd {
   background-color: #eeeeee;
+}
+.lil_label {
+  font-weight: normal;
+  font-style: italic;
+  font-size: .809em;
+  color: #aaaaaa;
+  margin: 1.309em 0em 1em 0em;
 }

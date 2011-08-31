@@ -16,12 +16,6 @@ __END__
     %script{:type => "text/javascript",
             :src  => "//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"}
     %script{:src => "jquery.zrssfeed.min.js", :type => "text/javascript"}
-    :javascript
-      $(document).ready(function () {
-        $('#test').rssfeed('http://feeds.reuters.com/reuters/oddlyEnoughNews', {
-          limit: 5
-        });
-      });
   %body
     #header
       %h1
@@ -60,7 +54,7 @@ __END__
         %h3
           About Me 
       %p
-        %img{:src => "images/slimbo.png", :alt => "Slimbo"}
+        %img{:src => "images/slimbo_thumb.png", :style => "height: 5.545em;", :alt => "Slimbo"}
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae consequat ante. Donec purus tortor, dapibus et gravida ut, consequat nec quam. Aliquam nunc tellus, venenatis id adipiscing sed, pharetra ac sapien. Nunc feugiat eleifend magna, vitae auctor mi sollicitudin nec.
         %a{:href => "____", :style => "font-style: italic; margin: 0em 0em 0em .191em;"}
           more...
@@ -85,14 +79,16 @@ __END__
             %a{:href => "https://github.com/slimbolala"}
               github.com/slimbolala
       #hr
+      .lil_label
+        Feed:
       :javascript
         $(document).ready(function () {
           $('#slimbo_feed').rssfeed('http://slimbolala.blogspot.com/feeds/posts/default', {
-            limit: 5
+            limit: 5,
+            header: false
           });
         });
-      %p
-        #slimbo_feed
+      #slimbo_feed
     #footer
       %p
         Nam ullamcorper urna quis augue facilisis quis egestas diam fermentum. Lorem non sagittis tincidunt, nisl massa porttitor justo, ut auctor lectus nisi a lectus.
@@ -103,26 +99,26 @@ __END__
     %h3
       Lorem Ipsum
   %p
-    %img{:src => "images/map.png", :alt => "funny thing map"}
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span class="small">Fusce eu tellus neque. Curabitur sollicitudin tellus vel quam accumsan quis lacinia lectus cursus. Cras blandit dictum urna quis dapibus. Maecenas consequat convallis risus at ornare. Curabitur vel odio arcu. In hendrerit leo ut quam gravida consectetur. Pellentesque faucibus, diam id sollicitudin gravida, neque justo ultrices est, ut sagittis magna ligula sed felis. Nam eget ipsum et felis iaculis tristique. Morbi malesuada elit a arcu pretium hendrerit.</span>
+    %img{:src => "images/map_thumb.png", :alt => "funny thing map"}
+    <span class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu tellus neque. Maecenas consequat convallis risus at ornare. Curabitur vel odio arcu. In hendrerit leo ut quam gravida consectetur. Pellentesque faucibus, diam id sollicitudin gravida, neque justo ultrices est, ut sagittis magna ligula sed felis. Nam eget ipsum et felis iaculis tristique. Morbi malesuada elit a arcu pretium hendrerit.</span>
 .panel
   %a{:href => "____"}
     %h3
       In Non Mauris
   %p
-    %img{:src => "images/koala.jpg", :alt => "koala"}
-    In non mauris vel lectus molestie ultrices. <span class="small">Proin pharetra sollicitudin pulvinar. Praesent vitae laoreet enim. Ut porttitor mollis condimentum. Vivamus nisi enim, blandit vel convallis id, venenatis a purus. Etiam feugiat lectus ornare enim imperdiet semper. Vivamus posuere pellentesque dui, eu varius lectus tincidunt vitae. Etiam fringilla facilisis porta. Nunc cursus nulla at neque consectetur ac posuere nisl tincidunt.</span> 
+    %img{:src => "images/koala_thumb.jpg", :alt => "koala"}
+    <span class="small">In non mauris vel lectus molestie ultrices. Proin pharetra sollicitudin pulvinar. Praesent vitae laoreet enim. Ut porttitor mollis condimentum. Vivamus nisi enim, blandit vel convallis id, venenatis a purus. Etiam feugiat lectus ornare enim imperdiet semper. Vivamus posuere pellentesque dui, eu varius lectus tincidunt vitae. Etiam fringilla facilisis porta. Nunc cursus nulla at neque consectetur ac posuere nisl tincidunt.</span> 
 .panel
   %a{:href => "____"}
     %h3
       Vestibulum Blandit
   %p
-    %img{:src => "images/willow.jpg", :alt => "willow"}
-    Vestibulum blandit lacinia odio, ac auctor ligula tincidunt scelerisque. <span class="small">Duis lacinia, orci in gravida sodales, sem velit semper sem, et auctor tellus turpis non dui. Aliquam erat volutpat. Praesent ullamcorper, augue at pretium pellentesque, purus quam auctor massa, vitae aliquam massa lectus in mauris. Integer aliquet leo lorem, et posuere nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed eleifend euismod massa at fringilla.</span>
+    %img{:src => "images/willow_thumb.jpg", :alt => "willow"}
+    <span class="small">Vestibulum blandit lacinia odio, ac auctor ligula tincidunt scelerisque. Duis lacinia, orci in gravida sodales, sem velit semper sem, et auctor tellus turpis non dui. Aliquam erat volutpat. Praesent ullamcorper, augue at pretium pellentesque, purus quam auctor massa, vitae aliquam massa lectus in mauris. Integer aliquet leo lorem, et posuere nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.  Sed eleifend euismod massa at fringilla. Sed eleifend euismod massa at fringilla.</span>
 .panel
   %a{:href => "____"}
     %h3
       In Hac Habitasse
   %p
-    %img{:src => "images/7_inch.png", :alt => "7 inch"}
-    In hac habitasse platea dictumst. <span class="small">Nunc ut auctor magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla ultricies erat sit amet urna dignissim pellentesque. Praesent hendrerit, diam eu laoreet venenatis, libero libero blandit dolor, a tempor nisl augue vitae sem. Cras dignissim metus odio, quis aliquam orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed eleifend euismod massa at fringilla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed eleifend euismod massa at fringilla.</span>
+    %img{:src => "images/7_inch_thumb.png", :alt => "7 inch"}
+    <span class="small">In hac habitasse platea dictumst. Nunc ut auctor magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla ultricies erat sit amet urna dignissim pellentesque. Praesent hendrerit, diam eu laoreet venenatis, libero libero blandit dolor, a tempor nisl augue vitae sem. Cras dignissim metus odio, quis aliquam orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed eleifend euismod massa at fringilla. Sed eleifend euismod massa at fringilla.</span>
