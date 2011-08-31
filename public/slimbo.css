@@ -21,8 +21,8 @@ body {
 #nav {
   height: 2.618em;
   line-height: 2.618em;
-  border-top: 1px solid #aaaaaa;
-  border-bottom: 1px solid #aaaaaa;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
   font-style: italic;
   margin: 0em 0em 2em 0em;
 }
@@ -33,14 +33,14 @@ body {
 #main {
   width: 606px;               /* 980/1.618 */ 
   float: left;
-  border-right: 1px solid #aaaaaa;
+  border-right: 1px solid #cccccc;
   margin: 0em 0em 1em 0em;
 }
 .panel {
   float: left;
   width: 271;                 /* 606/2 - 16 */
   height: 287;
-  margin: 0em 2em 2em 0em;
+  margin: 0em 2em 1em 0em;
 }
 .small {
 	font-size: .809em;
@@ -52,9 +52,9 @@ body {
 }
 #footer {
   clear: left;
-  border-top: 1px solid #aaaaaa;
+  border-top: 1px solid #cccccc;
   padding: 1em 0em;
-  color: #777777;
+  color: #aaaaaa;
 }
 a {
 	color: #990000;
@@ -71,9 +71,9 @@ h1 {
   margin: 0em 0em 0em 0em;
 }
 .h1_sub {
-  font-size: .309em;
+  font-size: .5em;
   font-style: italic;
-  color: #777777;
+  color: #aaaaaa;
   text-align: right
 }
 h3 {
@@ -93,6 +93,7 @@ table {
   text-align: left;
   padding: .309em 0em;
 }
+font-style: italic;
 th, td {
   padding: .309em 0em;
   font-style: italic;
@@ -102,10 +103,10 @@ th {
   font-style: italic;
   font-size: .809em;
   padding: 0em .809em 0em 0em;
-  color: #777777;
+  color: #aaaaaa;
 }
 #hr {
-  border-top: 1px solid #aaaaaa;
+  border-top: 1px solid #cccccc;
   height: 0px;
 }
 .rssHeader { 
