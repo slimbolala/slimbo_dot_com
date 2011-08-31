@@ -95,6 +95,7 @@ table {
 }
 th, td {
   padding: .309em 0em;
+  font-style: italic;
 }
 th {
   font-weight: normal;
