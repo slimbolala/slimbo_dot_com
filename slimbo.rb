@@ -46,10 +46,10 @@ __END__
           Music
       #nav_item
         %a{:href => "____"}
-          Design
+          Writing
       #nav_item
         %a{:href => "____"}
-          Writing
+          Design
       #nav_item
         %a{:href => "____"}
           Geek

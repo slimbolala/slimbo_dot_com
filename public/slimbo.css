@@ -28,7 +28,8 @@ body {
 }
 #nav_item {
   float: left;
-  width: 8.971em;
+  width: 6.854em;
+  padding: 0em 0em 0em .618em;
 }
 #main {
   width: 606px;               /* 980/1.618 */ 
