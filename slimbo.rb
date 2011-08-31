@@ -62,7 +62,7 @@ __END__
       %p
         %img{:src => "images/slimbo.png", :alt => "Slimbo"}
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae consequat ante. Donec purus tortor, dapibus et gravida ut, consequat nec quam. Aliquam nunc tellus, venenatis id adipiscing sed, pharetra ac sapien. Nunc feugiat eleifend magna, vitae auctor mi sollicitudin nec.
-        %a{:href => "____"}
+        %a{:href => "____", :style => "font-style: italic; margin: 0em 0em 0em .191em;"}
           more...
       #hr
       %table
