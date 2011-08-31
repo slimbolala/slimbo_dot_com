@@ -91,12 +91,11 @@ img {
 table {
   font-size: 1em;
   text-align: left;
-  padding: .309em 0em;
+  padding: .5em 0em;
 }
-font-style: italic;
 th, td {
   margin: 2em 0em;
-  padding: 1.5em 0em;
+  padding: .309em 0em;
   font-style: italic;
 }
 th {
