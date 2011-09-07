@@ -2,11 +2,9 @@ require 'rubygems'
 require 'sinatra'
 require 'couchrest'
 
-get '/geek/lorem_ipsum' do
+get '/*/:id' do
   slimbo_db = CouchRest.database("http://localhost:5984/slimbo")
-  @doc = slimbo_db.get('lorem_ipsum')
-  # grab a doc, figure out how to pass title and body 
-  # into haml template
+  @doc = slimbo_db.get(params[:id])
   haml :solo_doc
 end
 
@@ -95,7 +93,7 @@ __END__
               github.com/slimbolala
       #hr
       .lil_label
-        Slimbo-Feed:
+        RSS:
       :javascript
         $(document).ready(function () {
           $('#slimbo_feed').rssfeed('http://slimbolala.blogspot.com/feeds/posts/default', {
