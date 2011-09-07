@@ -1,8 +1,13 @@
 require 'rubygems'
 require 'sinatra'
+require 'couchrest'
 
 get '/geek/lorem_ipsum' do
-  haml :lorem_ipsum
+  slimbo_db = CouchRest.database("http://localhost:5984/slimbo")
+  slimbo_db.get('lorem_ipsum')
+  # grab a doc, figure out how to pass title and body 
+  # into haml template
+  #haml :lorem_ipsum
 end
 
 get '/' do
@@ -89,7 +94,7 @@ __END__
               github.com/slimbolala
       #hr
       .lil_label
-        Feed:
+        Slimbo-Feed:
       :javascript
         $(document).ready(function () {
           $('#slimbo_feed').rssfeed('http://slimbolala.blogspot.com/feeds/posts/default', {
@@ -135,7 +140,7 @@ __END__
 @@ lorem_ipsum
 .big_panel
   %h2
-    Lorem Ipsum
+    blah....Lorem Ipsum
   %p
     %img{:src => "/images/map.png", :alt => "funny thing map", :class => "big_picture"}
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu tellus neque. Maecenas consequat convallis risus at ornare. Curabitur vel odio arcu. In hendrerit leo ut quam gravida consectetur. Pellentesque faucibus, diam id sollicitudin gravida, neque justo ultrices est, ut sagittis magna ligula sed felis. Nam eget ipsum et felis iaculis tristique. Morbi malesuada elit a arcu pretium hendrerit. Integer ornare purus eleifend justo vestibulum fringilla. Suspendisse potenti. Nunc eleifend, nisi vitae ornare aliquet, odio sapien elementum tortor, quis dignissim orci nulla at libero. Sed in elit sem. Fusce lacus diam, vulputate feugiat auctor eu, ullamcorper quis ante. Praesent dapibus lacinia mollis. Nulla in sapien at lorem accumsan ornare. Fusce aliquet lacinia convallis. In hac habitasse platea dictumst.
