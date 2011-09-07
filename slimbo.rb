@@ -141,4 +141,4 @@ __END__
 @@ solo_doc
 .big_panel
   %h2= @doc['title']
-  %p= @doc['body']
+  #body= markdown(@doc['body'])
