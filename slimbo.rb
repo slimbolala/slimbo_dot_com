@@ -116,7 +116,7 @@ __END__
     %img{:src => "/images/map_thumb.png", :class => "thumb", :alt => "funny thing map"}
     <span class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu tellus neque. Maecenas consequat convallis risus at ornare. Curabitur vel odio arcu. In hendrerit leo ut quam gravida consectetur. Pellentesque faucibus, diam id sollicitudin gravida, neque justo ultrices est, ut sagittis magna ligula sed felis. Nam eget ipsum et felis iaculis tristique. Morbi malesuada elit a arcu pretium hendrerit.</span>
 .panel
-  %a{:href => "____"}
+  %a{:href => "/illos/in_non_mauris"}
     %h3
       In Non Mauris
   %p
