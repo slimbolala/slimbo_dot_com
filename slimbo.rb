@@ -2,6 +2,12 @@ require 'rubygems'
 require 'sinatra'
 require 'couchrest'
 
+get '/:id' do
+  slimbo_db = CouchRest.database("http://localhost:5984/slimbo")
+  @doc = slimbo_db.get(params[:id])
+  haml :solo_doc
+end
+
 get '/*/:id' do
   slimbo_db = CouchRest.database("http://localhost:5984/slimbo")
   @doc = slimbo_db.get(params[:id])
@@ -10,10 +16,6 @@ end
 
 get '/' do
   haml :index
-end
-
-get '*' do
-  redirect to('/')
 end
 
 __END__
@@ -40,25 +42,25 @@ __END__
         %a{:href => "http://slimbolala.blogspot.com/"}
           Blog
       #nav_item
-        %a{:href => "____"}
+        %a{:href => "illos"}
           Illos
       #nav_item
-        %a{:href => "____"}
+        %a{:href => "photos"}
           Photos
       #nav_item
-        %a{:href => "____"}
+        %a{:href => "music"}
           Music
       #nav_item
-        %a{:href => "____"}
+        %a{:href => "writing"}
           Writing
       #nav_item
-        %a{:href => "____"}
+        %a{:href => "design"}
           Design
       #nav_item
-        %a{:href => "____"}
+        %a{:href => "geek"}
           Geek
       #nav_item
-        %a{:href => "____"}
+        %a{:href => "merch"}
           Merch
     #main
       = yield
