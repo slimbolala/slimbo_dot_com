@@ -27,7 +27,7 @@ __END__
     %link{:rel => "stylesheet", :href => "/slimbo.css"}
     %script{:type => "text/javascript",
             :src  => "//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"}
-    %script{:src => "/jquery.zrssfeed.min.js", :type => "text/javascript"}
+    %script{:src => "/slimbo.jquery.zrssfeed.min.js", :type => "text/javascript"}
   %body
     %a{:href => "/"}
       #header

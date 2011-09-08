@@ -46,7 +46,7 @@ body {
   height: 287;
   margin: 0em 2em 1em 0em;
 }
-.small {
+.small, blockquote {
 	font-size: .809em;
 }
 #sidebar {
@@ -103,6 +103,7 @@ img {
 }
 .big_picture {
   padding: 0em .818em .309em 0em;
+  width: 374px;
 }
 .thumb {
   height: 8.971em; 
