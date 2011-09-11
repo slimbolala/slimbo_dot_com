@@ -43,8 +43,10 @@ body {
 .panel {
   float: left;
   width: 271;                 /* 606/2 - 16 */
-  height: 287;
+  height: 217;
   margin: 0em 2em 1em 0em;
+  padding: 0em;
+  border-bottom: 1px solid #cccccc;
 }
 .small, blockquote {
 	font-size: .809em;
@@ -106,7 +108,7 @@ img {
   width: 374px;
 }
 .thumb {
-  height: 8.971em; 
+  width: 130px;
 }
 table {
   font-size: 1em;

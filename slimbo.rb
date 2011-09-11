@@ -151,7 +151,6 @@ __END__
       %a{:href => "/geek/lorem_ipsum"}
         %h4
           = baby_doc["value"]["title"]
-      %p
-        %img{:src => "/images/map_thumb.png", :class => "thumb", :alt => "funny thing map"}
-        %span{:class => "small"}
-          = baby_doc["value"]["body"]
+      %img{:src => "/images/map_thumb.png", :class => "thumb", :alt => "funny thing map"}
+      %span{:class => "small"}
+        = baby_doc["value"]["body"]
