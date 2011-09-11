@@ -37,7 +37,7 @@ body {
   margin: 0em 0em 1em 0em;
 }
 .big_panel {
-  width: 574px;
+  width: 606px;
   margin: 0em 2em 0em 0em;
 }
 .panel {
@@ -72,7 +72,7 @@ h1 {
 h1, h2, h3, h4 {
   font-weight: normal;
 }
-h2, h3 {
+h2, h3, h4 {
   font-style: italic;
 }
 h1 {
@@ -85,7 +85,7 @@ h1 {
   color: #aaaaaa;
   text-align: right
 }
-h2, h3 {
+h2, h3, h4 {
   margin: 0em 0em .5em 0em;
 }
 h2 {

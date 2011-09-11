@@ -148,7 +148,7 @@ __END__
   - @baby_docs.each do |baby_doc|
     .panel
       %a{:href => "/geek/lorem_ipsum"}
-        %h3
+        %h4
           = baby_doc["value"]["title"]
       %p
         %img{:src => "/images/map_thumb.png", :class => "thumb", :alt => "funny thing map"}
