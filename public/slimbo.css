@@ -20,6 +20,7 @@ body {
 }
 #nav {
   height: 2.618em;
+  /
   line-height: 2.618em;
   border-top: 1px solid #cccccc;
   border-bottom: 1px solid #cccccc;
@@ -38,6 +39,9 @@ body {
 }
 .big_panel {
   width: 606px;
+}
+.big_panel p {
+  line-height: 1.4em;
 }
 .big_panel .lil_label {
   margin: 0em;
