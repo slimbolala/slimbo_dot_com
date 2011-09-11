@@ -157,11 +157,11 @@ __END__
     %a{:href => baby_doc["value"]["id"]}
       %h3
         = baby_doc["value"]["title"]
-    %img{:src => "/images/map_thumb.png", :class => "thumb", :alt => "funny thing map"}
-    = baby_doc["value"]["teaser"]
     .lil_label
       = baby_doc["value"]["published"]
       - baby_doc["value"]["tags"].each do |tag|
         , 
         %a{:href => tag}
           = tag
+    %img{:src => "/images/map_thumb.png", :class => "thumb", :alt => "funny thing map"}
+    = baby_doc["value"]["teaser"]

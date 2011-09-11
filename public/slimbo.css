@@ -44,10 +44,11 @@ body {
   padding: 0em 0em 1.3em 0em;
 }
 .panel h3 {
-  margin: 0em 0em .5em 0em;
+  margin: 0em 0em 0em 0em;
 }
 .panel .lil_label {
-  margin: .5em 0em 0em 0em;
+  margin: 0em 0em 0em 0em;
+  padding: 0em 0em 1em 0em;
 }
 .panel {
   float: left;
@@ -116,7 +117,7 @@ img {
   width: 374px;
 }
 .thumb {
-  width: 89px;
+  width: 100px;
   margin: 0em 1em 1em 0em;
 }
 table {
