@@ -5,6 +5,7 @@ require 'couchrest'
 get '/:id' do
   slimbo_db = CouchRest.database("http://localhost:5984/slimbo")
   @doc = slimbo_db.get(params[:id])
+  @baby_docs = slimbo_db.view('slimbo_docs/by_tag', {:key => params[:id]}).inspect
   haml :solo_doc
 end
 
@@ -144,3 +145,5 @@ __END__
 .big_panel
   %h2= @doc['title']
   #body= markdown(@doc['body'])
+  %p
+    = @baby_docs
