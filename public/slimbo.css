@@ -86,7 +86,7 @@ h1 {
   color: #aaaaaa;
   text-align: right
 }
-h2, h3, h4 {
+h2 {
   margin: 0em 0em .5em 0em;
 }
 h2 {
@@ -94,6 +94,7 @@ h2 {
 }
 h3 {
   font-size: 1.309em;
+  margin: 0em 0em 1em 0em;
 }
 p {
   margin: 0em 0em 2em 0em;
