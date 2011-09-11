@@ -71,7 +71,7 @@ __END__
         %h3
           About Me 
       %p
-        %img{:src => "/images/slimbo_thumb.png", :style => "height: 5.545em;", :alt => "Slimbo"}
+        %img{:src => "/images/slimbo_thumb.png", :class => "thumb", :alt => "Slimbo"}
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae consequat ante. Donec purus tortor, dapibus et gravida ut, consequat nec quam. Aliquam nunc tellus, venenatis id adipiscing sed, pharetra ac sapien. Nunc feugiat eleifend magna, vitae auctor mi sollicitudin nec.
         %a{:href => "____", :style => "font-style: italic; margin: 0em 0em 0em .191em;"}
           more...
@@ -157,11 +157,11 @@ __END__
     %a{:href => baby_doc["value"]["id"]}
       %h3
         = baby_doc["value"]["title"]
+    %img{:src => "/images/map_thumb.png", :class => "thumb", :alt => "funny thing map"}
     .lil_label
       = baby_doc["value"]["published"]
       - baby_doc["value"]["tags"].each do |tag|
         , 
         %a{:href => tag}
           = tag
-    %img{:src => "/images/map_thumb.png", :class => "thumb", :alt => "funny thing map"}
     = baby_doc["value"]["teaser"]
