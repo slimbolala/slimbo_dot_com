@@ -145,6 +145,12 @@ __END__
 @@ solo_doc
 .big_panel
   %h2= @doc['title']
+  .lil_label
+    = @doc["published"]
+    - @doc["tags"].each do |tag|
+      , 
+      %a{:href => tag}
+        = tag
   #body= markdown(@doc['body'])
   - @baby_docs.each do |baby_doc|
     .panel

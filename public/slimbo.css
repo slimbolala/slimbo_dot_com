@@ -38,14 +38,12 @@ body {
 }
 .big_panel {
   width: 606px;
-  margin: 0em 1em 0em 0em;
 }
 .panel {
   float: left;
   width: 271;                 /* 606/2 - 16 */
-  height: 232;
+  height: 178;
   margin: 0em 2em 3em 0em;
-  padding: 0em;
 }
 .small, blockquote, .panel {
 	font-size: .809em;
@@ -108,8 +106,8 @@ img {
   width: 374px;
 }
 .thumb {
-  width: 143px;
-  margin: 0em .5em .5em 0em;
+  width: 89px;
+  margin: 0em 1em 1em 0em;
 }
 table {
   font-size: 1em;
