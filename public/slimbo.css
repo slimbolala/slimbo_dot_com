@@ -30,7 +30,7 @@ body {
 #nav_item {
   float: left;
   width: 6.854em;
-  padding: .3em 0em 0em .618em;
+  padding: .7em 0em 0em .618em;
 }
 #main {
   width: 606px;               /* 980/1.618 */ 
