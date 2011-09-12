@@ -24,6 +24,10 @@ error RestClient::ResourceNotFound do
   redirect '/whoops'
 end
 
+error do
+  haml :crash_n_burn, :layout => false
+end
+
 __END__
 
 
@@ -137,3 +141,13 @@ __END__
         %a{:href => tag}
           = tag
     = baby_doc["value"]["teaser"]
+
+@@ crash_n_burn
+%html
+  %head
+    %title
+      Slimbolala.com
+    %link{:rel => "stylesheet", :href => "/slimbo.css"}
+  %body
+    %h2 Doh!
+    %p Wow, something went totally wrong. Yikes. Maybe hit refresh and see if it starts working. Or back up to where you were. If it keeps acting funky, let me know.+++ Obliged.
