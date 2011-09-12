@@ -140,7 +140,7 @@ __END__
         &mdash; 
         %a{:href => tag}
           = tag
-    = baby_doc["value"]["teaser"]
+    = markdown(baby_doc["value"]["teaser"])
 
 @@ crash_n_burn
 %html

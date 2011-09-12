@@ -106,8 +106,11 @@ h3 {
   font-size: 1.309em;
   margin: 0em 0em 1em 0em;
 }
+h4 {
+  margin: 1.809em 0em .809em 0em;
+}
 p {
-  margin: 0em 0em 2em 0em;
+  margin: 0em 0em 1.809em 0em;
 }
 img {
   float: left;
