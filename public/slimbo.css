@@ -38,7 +38,7 @@ body {
   margin: 0em 0em 1em 0em;
 }
 .big_panel {
-  width: 606px;
+  padding: 0em 2em 0em 0em;
 }
 .big_panel p {
   line-height: 1.4em;
@@ -77,7 +77,7 @@ body {
   color: #aaaaaa;
 }
 a { 
-  color: #462200;
+  color: #563200;
   text-decoration: none;
 }
 h1 {
@@ -121,7 +121,11 @@ img {
   width: 374px;
 }
 .thumb {
-  width: 128px;
+  width: 100px;
+  margin: 0em 1em 1em 0em;
+}
+.lil_thumb {
+  width: 75px;
   margin: 0em 1em 1em 0em;
 }
 table {

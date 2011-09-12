@@ -9,15 +9,8 @@ get '/:id' do
   haml :solo_doc
 end
 
-get '/*/:id' do
-  slimbo_db = CouchRest.database("http://localhost:5984/slimbo")
-  @doc = slimbo_db.get(params[:id])
-  @baby_docs = slimbo_db.view('slimbo_docs/by_tag', {:key => params[:id]})["rows"]
-  haml :solo_doc
-end
-
 get '/' do
-  haml :index
+  redirect '/front'
 end
 
 __END__
@@ -44,34 +37,34 @@ __END__
         %a{:href => "http://slimbolala.blogspot.com/"}
           Blog
       #nav_item
-        %a{:href => "illos"}
+        %a{:href => "/illos"}
           Illos
       #nav_item
-        %a{:href => "photos"}
+        %a{:href => "/photos"}
           Photos
       #nav_item
-        %a{:href => "music"}
+        %a{:href => "/music"}
           Music
       #nav_item
-        %a{:href => "writing"}
+        %a{:href => "/writing"}
           Writing
       #nav_item
-        %a{:href => "design"}
+        %a{:href => "/design"}
           Design
       #nav_item
-        %a{:href => "geek"}
+        %a{:href => "/geek"}
           Geek
       #nav_item
-        %a{:href => "merch"}
+        %a{:href => "/merch"}
           Merch
     #main
       = yield
     #sidebar
-      %a{:href => "____"}
+      %a{:href => "/about_me"}
         %h3
           About Me 
       %p
-        %img{:src => "/images/slimbo_thumb.png", :class => "thumb", :alt => "Slimbo"}
+        %img{:src => "/images/slimbo_thumb.png", :class => "lil_thumb", :alt => "Slimbo"}
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae consequat ante. Donec purus tortor, dapibus et gravida ut, consequat nec quam. Aliquam nunc tellus, venenatis id adipiscing sed, pharetra ac sapien. Nunc feugiat eleifend magna, vitae auctor mi sollicitudin nec.
         %a{:href => "____", :style => "font-style: italic; margin: 0em 0em 0em .191em;"}
           more...
@@ -148,7 +141,7 @@ __END__
   .lil_label
     = @doc["published"]
     - @doc["tags"].each do |tag|
-      , 
+      \ ~     
       %a{:href => tag}
         = tag
   #body= markdown(@doc['body'])
@@ -161,7 +154,7 @@ __END__
     .lil_label
       = baby_doc["value"]["published"]
       - baby_doc["value"]["tags"].each do |tag|
-        , 
+        \ ~     
         %a{:href => tag}
           = tag
     = baby_doc["value"]["teaser"]
