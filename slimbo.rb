@@ -2,6 +2,9 @@ require 'rubygems'
 require 'sinatra'
 require 'couchrest'
 
+set :raise_errors, Proc.new { false }
+set :show_exceptions, false
+
 get '/:id' do
   slimbo_db = CouchRest.database("http://localhost:5984/slimbo")
   @doc = slimbo_db.get(params[:id])
@@ -11,6 +14,14 @@ end
 
 get '/' do
   redirect '/front'
+end
+
+get '*' do
+  redirect '/whoops'
+end
+
+error RestClient::ResourceNotFound do
+  redirect '/whoops'
 end
 
 __END__
@@ -103,45 +114,13 @@ __END__
       %p
         Nam ullamcorper urna quis augue facilisis quis egestas diam fermentum. Lorem non sagittis tincidunt, nisl massa porttitor justo, ut auctor lectus nisi a lectus.
 
-
-@@ index
-.panel
-  %a{:href => "/geek/lorem_ipsum"}
-    %h3
-      Lorem Ipsum
-  %p
-    %img{:src => "/images/map_thumb.png", :class => "thumb", :alt => "funny thing map"}
-    <span class="small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu tellus neque. Maecenas consequat convallis risus at ornare. Curabitur vel odio arcu. In hendrerit leo ut quam gravida consectetur. Pellentesque faucibus, diam id sollicitudin gravida, neque justo ultrices est, ut sagittis magna ligula sed felis. Nam eget ipsum et felis iaculis tristique. Morbi malesuada elit a arcu pretium hendrerit.</span>
-.panel
-  %a{:href => "/illos/in_non_mauris"}
-    %h3
-      In Non Mauris
-  %p
-    %img{:src => "/images/koala_thumb.jpg", :class => "thumb", :alt => "koala"}
-    <span class="small">In non mauris vel lectus molestie ultrices. Proin pharetra sollicitudin pulvinar. Praesent vitae laoreet enim. Ut porttitor mollis condimentum. Vivamus nisi enim, blandit vel convallis id, venenatis a purus. Etiam feugiat lectus ornare enim imperdiet semper. Vivamus posuere pellentesque dui, eu varius lectus tincidunt vitae. Etiam fringilla facilisis porta. Nunc cursus nulla at neque consectetur ac posuere nisl tincidunt.</span> 
-.panel
-  %a{:href => "____"}
-    %h3
-      Vestibulum Blandit
-  %p
-    %img{:src => "/images/willow_thumb.jpg", :class => "thumb", :alt => "willow"}
-    <span class="small">Vestibulum blandit lacinia odio, ac auctor ligula tincidunt scelerisque. Duis lacinia, orci in gravida sodales, sem velit semper sem, et auctor tellus turpis non dui. Aliquam erat volutpat. Praesent ullamcorper, augue at pretium pellentesque, purus quam auctor massa, vitae aliquam massa lectus in mauris. Integer aliquet leo lorem, et posuere nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.  Sed eleifend euismod massa at fringilla. Sed eleifend euismod massa at fringilla.</span>
-.panel
-  %a{:href => "____"}
-    %h3
-      In Hac Habitasse
-  %p
-    %img{:src => "/images/7_inch_thumb.png", :class => "thumb", :alt => "7 inch"}
-    <span class="small">In hac habitasse platea dictumst. Nunc ut auctor magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla ultricies erat sit amet urna dignissim pellentesque. Praesent hendrerit, diam eu laoreet venenatis, libero libero blandit dolor, a tempor nisl augue vitae sem. Cras dignissim metus odio, quis aliquam orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed eleifend euismod massa at fringilla. Sed eleifend euismod massa at fringilla.</span>
-
-
 @@ solo_doc
 .big_panel
   %h2= @doc['title']
   .lil_label
     = @doc["published"]
     - @doc["tags"].each do |tag|
-      \ ~     
+      &mdash;
       %a{:href => tag}
         = tag
   #body= markdown(@doc['body'])
@@ -154,7 +133,7 @@ __END__
     .lil_label
       = baby_doc["value"]["published"]
       - baby_doc["value"]["tags"].each do |tag|
-        \ ~     
+        &mdash; 
         %a{:href => tag}
           = tag
     = baby_doc["value"]["teaser"]

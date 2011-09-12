@@ -44,7 +44,7 @@ body {
   line-height: 1.4em;
 }
 .big_panel .lil_label {
-  margin: 0em;
+  margin: .3em 0em 0em 0em;
   padding: 0em 0em 1.3em 0em;
 }
 .panel h3 {
