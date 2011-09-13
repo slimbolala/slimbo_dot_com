@@ -3,7 +3,7 @@ require 'sinatra'
 require 'couchrest'
 
 set :raise_errors, Proc.new { false }
-set :show_exceptions, false
+#set :show_exceptions, false
 
 get '/:id' do
   slimbo_db = CouchRest.database("http://localhost:5984/slimbo")
@@ -24,9 +24,9 @@ error RestClient::ResourceNotFound do
   redirect '/whoops'
 end
 
-error do
-  haml :crash_n_burn, :layout => false
-end
+#error do
+#  haml :crash_n_burn, :layout => false
+#end
 
 __END__
 
@@ -35,7 +35,8 @@ __END__
 %html
   %head
     %title
-      Slimbolala.com
+      Slimbolala.com :
+      = @doc["title"]
     %link{:rel => "stylesheet", :href => "/slimbo.css"}
     %link{:rel => "shortcut icon", :href => "/favicon.ico"} 
     %script{:type => "text/javascript",
@@ -110,41 +111,42 @@ __END__
       #hr
       .lil_label
         RSS:
-      :javascript
-        $(document).ready(function () {
-          $('#slimbo_feed').rssfeed('http://slimbolala.blogspot.com/feeds/posts/default', {
-            limit: 5,
-            header: false
-          });
-        });
       #slimbo_feed
     #footer
       %p
         Nam ullamcorper urna quis augue facilisis quis egestas diam fermentum. Lorem non sagittis tincidunt, nisl massa porttitor justo, ut auctor lectus nisi a lectus.
+    :javascript
+      $(document).ready(function () {
+        $('#slimbo_feed').rssfeed('http://slimbolala.blogspot.com/feeds/posts/default', {
+          limit: 5,
+          header: false
+        });
+      });
 
 @@ solo_doc
-.big_panel
-  %h2= @doc['title']
-  .lil_label
-    = @doc["published"]
-    - @doc["tags"].each do |tag|
-      &mdash;
-      %a{:href => tag}
-        = tag
-  #body= markdown(@doc['body'])
-- @baby_docs.each do |baby_doc|
-  .panel
-    %a{:href => baby_doc["value"]["id"]}
-      %h3
-        = baby_doc["value"]["title"]
-    %img{:src => "/images/map_thumb.png", :class => "thumb", :alt => "funny thing map"}
+.fade_panel
+  .big_panel
+    %h2= @doc['title']
     .lil_label
-      = baby_doc["value"]["published"]
-      - baby_doc["value"]["tags"].each do |tag|
-        &mdash; 
+      = @doc["published"]
+      - @doc["tags"].each do |tag|
+        &mdash;
         %a{:href => tag}
           = tag
-    = markdown(baby_doc["value"]["teaser"])
+    #body= markdown(@doc['body'])
+  - @baby_docs.each do |baby_doc|
+    .panel
+      %a{:href => baby_doc["value"]["id"]}
+        %h3
+          = baby_doc["value"]["title"]
+      %img{:src => "/images/map_thumb.png", :class => "thumb", :alt => "funny thing map"}
+      .lil_label
+        = baby_doc["value"]["published"]
+        - baby_doc["value"]["tags"].each do |tag|
+          &mdash; 
+          %a{:href => tag}
+            = tag
+      = markdown(baby_doc["value"]["teaser"])
 
 @@ crash_n_burn
 %html
