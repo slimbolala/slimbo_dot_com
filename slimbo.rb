@@ -49,12 +49,18 @@ __END__
             :src  => "//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"}
     %script{:src => "/slimbo.jquery.zrssfeed.min.js", :type => "text/javascript"}
   %body
-    %a{:href => "/"}
-      #header
-        %h1
+    #header
+    - unless (params[:id] == 'front')
+      %h1
+        %a{:href => "/"}
           Slimbolala.com
-          %span{:class => "h1_sub"}
-            Stuff I Make and Do
+        %span{:class => "h1_sub"}
+          Stuff I Make and Do
+    - else
+      %h1
+        Slimbolala.com
+        %span{:class => "h1_sub"}
+          Stuff I Make and Do
     #nav
       #nav_item
         %a{:href => "/blog"}

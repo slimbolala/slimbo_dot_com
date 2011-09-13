@@ -80,6 +80,9 @@ a {
   color: #563200;
   text-decoration: none;
 }
+a:hover {
+  text-decoration: underline;
+}
 h1, h2, h3, h4 {
   font-weight: normal;
 }
