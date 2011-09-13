@@ -7,6 +7,7 @@ set :raise_errors, Proc.new { false }
 
 get '/:id/?' do
   slimbo_db = CouchRest.database("http://localhost:5984/slimbo")
+  @nav_items = slimbo_db.get("-nav")['nav_items']
   begin
     @doc = slimbo_db.get(params[:id])
   rescue RestClient::ResourceNotFound
@@ -62,41 +63,11 @@ __END__
         %span{:class => "h1_sub"}
           Stuff I Make and Do
     #nav
-      #nav_item
-        %a{:href => "/blog"}
-          Blog
-      #nav_spacer
-      #nav_item
-        %a{:href => "/illos"}
-          Illos
-      #nav_spacer
-      #nav_item
-        %a{:href => "/photos"}
-          Photos
-      #nav_spacer
-      #nav_item
-        %a{:href => "/music"}
-          Music
-      #nav_spacer
-      #nav_item
-        %a{:href => "/writing"}
-          Writing
-      #nav_spacer
-      #nav_item
-        %a{:href => "/design"}
-          Design
-      #nav_spacer
-      #nav_item
-        %a{:href => "/geek"}
-          Geek
-      #nav_spacer
-      #nav_item
-        %a{:href => "/kids"}
-          Kids
-      #nav_spacer
-      #nav_item
-        %a{:href => "/merch"}
-          Merch
+      - @nav_items.each do |nav_item|
+        #nav_item
+          %a{:href => nav_item}
+            = nav_item
+        #nav_spacer
     #main
       = yield
     #sidebar
