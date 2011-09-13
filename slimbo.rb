@@ -37,6 +37,7 @@ __END__
     %title
       Slimbolala.com
     %link{:rel => "stylesheet", :href => "/slimbo.css"}
+    %link{:rel => "shortcut icon", :href => "/favicon.ico"} 
     %script{:type => "text/javascript",
             :src  => "//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"}
     %script{:src => "/slimbo.jquery.zrssfeed.min.js", :type => "text/javascript"}
@@ -49,7 +50,7 @@ __END__
             Stuff I Make and Do
     #nav
       #nav_item
-        %a{:href => "http://slimbolala.blogspot.com/"}
+        %a{:href => "/blog"}
           Blog
       #nav_item
         %a{:href => "/illos"}
@@ -69,6 +70,9 @@ __END__
       #nav_item
         %a{:href => "/geek"}
           Geek
+      #nav_item
+        %a{:href => "/kids"}
+          Kids
       #nav_item
         %a{:href => "/merch"}
           Merch
