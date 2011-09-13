@@ -5,7 +5,7 @@ require 'couchrest'
 set :raise_errors, Proc.new { false }
 #set :show_exceptions, false
 
-get '/:id' do
+get '/:id/?' do
   slimbo_db = CouchRest.database("http://localhost:5984/slimbo")
   begin
     @doc = slimbo_db.get(params[:id])
