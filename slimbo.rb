@@ -65,27 +65,35 @@ __END__
       #nav_item
         %a{:href => "/blog"}
           Blog
+      #nav_spacer
       #nav_item
         %a{:href => "/illos"}
           Illos
+      #nav_spacer
       #nav_item
         %a{:href => "/photos"}
           Photos
+      #nav_spacer
       #nav_item
         %a{:href => "/music"}
           Music
+      #nav_spacer
       #nav_item
         %a{:href => "/writing"}
           Writing
+      #nav_spacer
       #nav_item
         %a{:href => "/design"}
           Design
+      #nav_spacer
       #nav_item
         %a{:href => "/geek"}
           Geek
+      #nav_spacer
       #nav_item
         %a{:href => "/kids"}
           Kids
+      #nav_spacer
       #nav_item
         %a{:href => "/merch"}
           Merch

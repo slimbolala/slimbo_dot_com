@@ -20,8 +20,6 @@ body {
 }
 #nav {
   height: 2.618em;
-  /
-  line-height: 2.618em;
   border-top: 1px solid #cccccc;
   border-bottom: 1px solid #cccccc;
   font-style: italic;
@@ -29,8 +27,12 @@ body {
 }
 #nav_item {
   float: left;
-  width: 6.854em;
   padding: .7em 0em 0em .618em;
+}
+#nav_spacer {
+  float:left;
+  width: 5.545em;
+  height: 2em;
 }
 #main {
   width: 606px;               /* 980/1.618 */ 
