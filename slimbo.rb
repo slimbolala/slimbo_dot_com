@@ -117,10 +117,17 @@ __END__
         Nam ullamcorper urna quis augue facilisis quis egestas diam fermentum. Lorem non sagittis tincidunt, nisl massa porttitor justo, ut auctor lectus nisi a lectus.
     :javascript
       $(document).ready(function () {
+
+        // show the rss feed
         $('#slimbo_feed').rssfeed('http://slimbolala.blogspot.com/feeds/posts/default', {
           limit: 5,
           header: false
         });
+
+        // fade in main panel
+        $('.fade_panel').hide().fadeIn('slow');
+
+        
       });
 
 @@ solo_doc
