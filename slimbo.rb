@@ -12,12 +12,8 @@ get '/:id' do
   rescue RestClient::ResourceNotFound
     @doc = nil
   end
-  begin
-    @baby_docs = slimbo_db.view('slimbo_docs/by_tag', {:key => params[:id]})["rows"]
-  rescue RestClient::ResourceNotFound
-    @baby_docs = nil
-  end
-  if (@doc == nil && @baby_docs == nil)
+  @baby_docs = slimbo_db.view('slimbo_docs/by_tag', {:key => params[:id]})["rows"]
+  if (@doc == nil && @baby_docs.length == 0)
     redirect '/whoops'
   end
   haml :solo_doc
@@ -25,6 +21,10 @@ end
 
 get '/' do
   redirect '/front'
+end
+
+get '*' do
+  redirect '/whoops'
 end
 
 #error do
@@ -148,20 +148,19 @@ __END__
           %a{:href => tag}
             = tag
       #body= markdown(@doc['body'])
-  - unless @baby_docs.nil?
-    - @baby_docs.each do |baby_doc|
-      .panel
-        %a{:href => baby_doc["value"]["id"]}
-          %h3
-            = baby_doc["value"]["title"]
-        %img{:src => "/images/map_thumb.png", :class => "thumb", :alt => "funny thing map"}
-        .lil_label
-          = baby_doc["value"]["published"]
-          - baby_doc["value"]["tags"].each do |tag|
-            &mdash; 
-            %a{:href => tag}
-              = tag
-        = markdown(baby_doc["value"]["teaser"])
+  - @baby_docs.each do |baby_doc|
+    .panel
+      %a{:href => baby_doc["value"]["id"]}
+        %h3
+          = baby_doc["value"]["title"]
+      %img{:src => "/images/map_thumb.png", :class => "thumb", :alt => "funny thing map"}
+      .lil_label
+        = baby_doc["value"]["published"]
+        - baby_doc["value"]["tags"].each do |tag|
+          &mdash; 
+          %a{:href => tag}
+            = tag
+      = markdown(baby_doc["value"]["teaser"])
 
 @@ crash_n_burn
 %html
