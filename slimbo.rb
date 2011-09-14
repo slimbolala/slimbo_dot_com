@@ -53,75 +53,79 @@ __END__
             :src  => "//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"}
     %script{:src => "/slimbo.jquery.zrssfeed.min.js", :type => "text/javascript"}
   %body
-    #header
-    - unless (params[:id] == 'front')
-      %h1
-        %a{:href => "/"} Slimbolala.com
-        %span{:class => "h1_sub"}
-          \: &nbsp;Stuff I Make and Do
-    - else
-      %h1
-        Slimbolala.com
-        %span{:class => "h1_sub"}
-          Stuff I Make and Do
-    #nav
-      - @nav_items.each do |nav_item|
-        #nav_item
-          %a{:href => nav_item}
-            = nav_item
-        #nav_spacer
-    #main
-      = yield
-    #sidebar
-      %a{:href => "/about_me"}
-        %h3
-          = @about_me['title']
-      %img{:src => "/images/slimbo_thumb.png", :class => "lil_thumb", :alt => "Slimbo"}
-      = markdown(@about_me['body']).split(' ')[0,30].join(' ')
-      %a{:href => "/about_me"}
-        &hellip;
+    #content
+      #header
+      - unless (params[:id] == 'front')
+        %h1
+          %a{:href => "/"} Slimbolala.com
+          %span{:class => "h1_sub"}
+            \: &nbsp;Stuff I Make and Do
+      - else
+        %h1
+          Slimbolala.com
+          %span{:class => "h1_sub"}
+            \: &nbsp;Stuff I Make and Do
+      #nav
+        - @nav_items.each do |nav_item|
+          #nav_item
+            - if (params[:id] == nav_item)
+              = nav_item
+            - else
+              %a{:href => nav_item} 
+                = nav_item
+          #nav_spacer
+      #main
+        = yield
+      #sidebar
+        %a{:href => "/about_me"}
+          %h3
+            = @about_me['title']
+        %img{:src => "/images/slimbo_thumb.png", :class => "lil_thumb", :alt => "Slimbo"}
+        = markdown(@about_me['body']).split(' ')[0,30].join(' ')
+        %a{:href => "/about_me"}
+          &hellip;
 
-      #hr
-      %table
-        %tr
-          %th
-            Blog:
-          %td
-            %a{:href => "http://slimbolala.blogspot.com/"}
-              slimbolala.blogspot.com
-        %tr
-          %th
-            Email:
-          %td
-            %a{:href => "mailto:____@____.com"}
-              &#115;&#108;&#105;&#109;&#98;&#111;&#108;&#97;&#108;&#97;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;
-        %tr
-          %th
-            GitHub:
-          %td
-            %a{:href => "https://github.com/slimbolala"}
-              github.com/slimbolala
-      #hr
-      .lil_label
-        RSS:
-      #slimbo_feed
-    #footer
-      %p
-        Nam ullamcorper urna quis augue facilisis quis egestas diam fermentum. Lorem non sagittis tincidunt, nisl massa porttitor justo, ut auctor lectus nisi a lectus.
-    :javascript
-      $(document).ready(function () {
+        #hr
+        %table
+          %tr
+            %th
+              Blog:
+            %td
+              %a{:href => "http://slimbolala.blogspot.com/"}
+                slimbolala.blogspot.com
+          %tr
+            %th
+              Email:
+            %td
+              %a{:href => "mailto:____@____.com"}
+                &#115;&#108;&#105;&#109;&#98;&#111;&#108;&#97;&#108;&#97;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;
+          %tr
+            %th
+              GitHub:
+            %td
+              %a{:href => "https://github.com/slimbolala"}
+                github.com/slimbolala
+        #hr
+        .lil_label
+          RSS:
+        #slimbo_feed
+      #footer
+        %p
+          Nam ullamcorper urna quis augue facilisis quis egestas diam fermentum. Lorem non sagittis tincidunt, nisl massa porttitor justo, ut auctor lectus nisi a lectus.
+      :javascript
+        $(document).ready(function () {
 
-        // show the rss feed
-        $('#slimbo_feed').rssfeed('http://slimbolala.blogspot.com/feeds/posts/default', {
-          limit: 5,
-          header: false
+          // show the rss feed
+          $('#slimbo_feed').rssfeed('http://slimbolala.blogspot.com/feeds/posts/default', {
+            limit: 5,
+            header: false
+          });
+
+          // fade in main panel
+          $('.fade_panel').hide().fadeIn('slow');
+
+          
         });
-
-        // fade in main panel
-        $('.fade_panel').hide().fadeIn('slow');
-
-        
-      });
 
 @@ solo_doc
 .fade_panel
@@ -143,7 +147,6 @@ __END__
             = baby_doc["value"]["title"].split(' ')[0,4].join(' ') + '&hellip;'
           - else
             = baby_doc["value"]["title"]
-      %img{:src => "/images/map_thumb.png", :class => "thumb", :alt => "funny thing map"}
       .lil_label
         = baby_doc["value"]["published"]
         - baby_doc["value"]["tags"].each do |tag|
@@ -153,6 +156,7 @@ __END__
           - else
             %a{:href => tag} 
               = tag
+      %img{:src => "/images/map_thumb.png", :class => "thumb", :alt => "funny thing map"}
       = markdown(baby_doc["value"]["teaser"]).split(' ')[0,15].join(' ')
       %a{:href => baby_doc["value"]["id"]}
         &hellip;
