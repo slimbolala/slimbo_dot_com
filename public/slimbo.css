@@ -49,7 +49,10 @@
   margin: .3em 0em 0em 0em;
   padding: 0em 0em 2.118em 0em;
 }
-.panel h3, #sidebar h3 {
+#sidebar h3 {
+  margin: 0em 0em .7em 0em;
+}
+.panel h3 {
   margin: 0em 0em 0.3em 0em;
 }
 .panel .lil_label {
@@ -60,7 +63,7 @@
   float: left;
   width: 271;                 /* 606/2 - 16 */
   height: 123;
-  margin: 0em 2em 3em 0em;
+  margin: 0em 2em 4em 0em;
 }
 .small, blockquote, .panel {
 	font-size: .809em;
