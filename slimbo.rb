@@ -56,10 +56,9 @@ __END__
     #header
     - unless (params[:id] == 'front')
       %h1
-        %a{:href => "/"}
-          Slimbolala.com
+        %a{:href => "/"} Slimbolala.com
         %span{:class => "h1_sub"}
-          Stuff I Make and Do
+          \: &nbsp;Stuff I Make and Do
     - else
       %h1
         Slimbolala.com
