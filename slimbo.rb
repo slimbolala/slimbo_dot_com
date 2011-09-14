@@ -148,8 +148,11 @@ __END__
         = baby_doc["value"]["published"]
         - baby_doc["value"]["tags"].each do |tag|
           &mdash; 
-          %a{:href => tag}
+          - if (params[:id] == tag)
             = tag
+          - else
+            %a{:href => tag} 
+              = tag
       = markdown(baby_doc["value"]["teaser"]).split(' ')[0,15].join(' ')
       %a{:href => baby_doc["value"]["id"]}
         &hellip;
