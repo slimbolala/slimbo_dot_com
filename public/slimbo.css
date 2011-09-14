@@ -49,7 +49,7 @@ body {
   margin: .3em 0em 0em 0em;
   padding: 0em 0em 2.118em 0em;
 }
-.panel h3 {
+.panel h3, #sidebar h3 {
   margin: 0em 0em 0.5em 0em;
 }
 .panel .lil_label {

@@ -5,7 +5,7 @@ function(doc) {
         published: doc.published,
 	      title: doc.title,
         tags: doc.tags,
-        teaser: doc.body.replace(/(([^\s]+\s\s*){25})(.*)/,"$1…"),
+        teaser: doc.body.replace(/(([^\s]+\s\s*){100})(.*)/,"$1…"),
         id: doc._id
       });
     }

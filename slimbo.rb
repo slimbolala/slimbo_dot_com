@@ -6,8 +6,11 @@ set :raise_errors, Proc.new { false }
 #set :show_exceptions, false
 
 get '/:id/?' do
+  # -- move this --
   slimbo_db = CouchRest.database("http://localhost:5984/slimbo")
   @nav_items = slimbo_db.get("-nav")['nav_items']
+  @about_me = slimbo_db.get("about_me")
+  # ---------------
   begin
     @doc = slimbo_db.get(params[:id])
   rescue RestClient::ResourceNotFound
@@ -73,12 +76,9 @@ __END__
     #sidebar
       %a{:href => "/about_me"}
         %h3
-          About Me 
-      %p
-        %img{:src => "/images/slimbo_thumb.png", :class => "lil_thumb", :alt => "Slimbo"}
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae consequat ante. Donec purus tortor, dapibus et gravida ut, consequat nec quam. Aliquam nunc tellus, venenatis id adipiscing sed, pharetra ac sapien. Nunc feugiat eleifend magna, vitae auctor mi sollicitudin nec.
-        %a{:href => "____", :style => "font-style: italic; margin: 0em 0em 0em .191em;"}
-          more...
+          = @about_me['title']
+      %img{:src => "/images/slimbo_thumb.png", :class => "lil_thumb", :alt => "Slimbo"}
+      = markdown(@about_me['body'])
       #hr
       %table
         %tr
@@ -145,7 +145,7 @@ __END__
           &mdash; 
           %a{:href => tag}
             = tag
-      = markdown(baby_doc["value"]["teaser"])
+      = markdown(baby_doc["value"]["teaser"]).split(' ')[0,10].join(' ') + '&hellip;'
 
 @@ crash_n_burn
 %html
