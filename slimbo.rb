@@ -78,7 +78,10 @@ __END__
         %h3
           = @about_me['title']
       %img{:src => "/images/slimbo_thumb.png", :class => "lil_thumb", :alt => "Slimbo"}
-      = markdown(@about_me['body'])
+      = markdown(@about_me['body']).split(' ')[0,30].join(' ')
+      %a{:href => "/about_me"}
+        &hellip;
+
       #hr
       %table
         %tr
@@ -137,7 +140,10 @@ __END__
     .panel
       %a{:href => baby_doc["value"]["id"]}
         %h3
-          = baby_doc["value"]["title"]
+          - if baby_doc["value"]["title"].split(' ').length > 4
+            = baby_doc["value"]["title"].split(' ')[0,4].join(' ') + '&hellip;'
+          - else
+            = baby_doc["value"]["title"]
       %img{:src => "/images/map_thumb.png", :class => "thumb", :alt => "funny thing map"}
       .lil_label
         = baby_doc["value"]["published"]
@@ -145,7 +151,9 @@ __END__
           &mdash; 
           %a{:href => tag}
             = tag
-      = markdown(baby_doc["value"]["teaser"]).split(' ')[0,10].join(' ') + '&hellip;'
+      = markdown(baby_doc["value"]["teaser"]).split(' ')[0,15].join(' ')
+      %a{:href => baby_doc["value"]["id"]}
+        &hellip;
 
 @@ crash_n_burn
 %html

@@ -153,6 +153,7 @@ th {
 #hr {
   border-top: 1px solid #cccccc;
   height: 0px;
+  clear: left;
 }
 .rssBody ul { 
   list-style: none; 
