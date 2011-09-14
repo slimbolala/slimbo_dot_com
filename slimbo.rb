@@ -156,7 +156,7 @@ __END__
           - else
             %a{:href => tag} 
               = tag
-      %img{:src => "/images/map_thumb.png", :class => "thumb", :alt => "funny thing map"}
+      %img{:src => "/images/thumbs/#{baby_doc["value"]["id"]}.png", :class => "thumb", :alt => baby_doc["value"]["title"]}
       = markdown(baby_doc["value"]["teaser"]).split(' ')[0,20].join(' ')
       %a{:href => baby_doc["value"]["id"]}
         &hellip;
