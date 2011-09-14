@@ -80,7 +80,8 @@ __END__
         %a{:href => "/about_me"}
           %h3
             = @about_me['title']
-        %img{:src => "/images/slimbo_thumb.png", :class => "lil_thumb", :alt => "Slimbo"}
+        %a{:href => "/about_me"}
+          %img{:src => "/images/slimbo_thumb.png", :class => "lil_thumb", :alt => "Slimbo"}
         = markdown(@about_me['body']).split(' ')[0,30].join(' ')
         %a{:href => "/about_me"}
           &hellip;
@@ -156,7 +157,8 @@ __END__
           - else
             %a{:href => tag} 
               = tag
-      %img{:src => "/images/thumbs/#{baby_doc["value"]["id"]}.png", :class => "thumb", :alt => baby_doc["value"]["title"]}
+      %a{:href => baby_doc["value"]["id"]}
+        %img{:src => "/images/thumbs/#{baby_doc["value"]["id"]}.png", :class => "thumb", :alt => baby_doc["value"]["id"]}
       = markdown(baby_doc["value"]["teaser"]).split(' ')[0,20].join(' ')
       %a{:href => baby_doc["value"]["id"]}
         &hellip;
