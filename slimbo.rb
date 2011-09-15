@@ -8,7 +8,7 @@ set :raise_errors, Proc.new { false }
 get '/:id/?' do
   # -- move this --
   slimbo_db = CouchRest.database("http://localhost:5984/slimbo")
-  @nav_items = slimbo_db.get("-nav")['nav_items']
+  @nav_items = slimbo_db.get("-nav")['nav_items'].sort
   @about_me = slimbo_db.get("about_me")
   # ---------------
   begin
@@ -84,8 +84,8 @@ __END__
           %img{:src => "/images/slimbo_thumb.png", :class => "lil_thumb", :alt => "Slimbo"}
         = markdown(@about_me['body']).split(' ')[0,30].join(' ')
         %a{:href => "/about_me"}
-          &hellip;
-
+          %em
+            &hellip;
         #hr
         %table
           %tr
@@ -135,7 +135,7 @@ __END__
       %h2= @doc['title']
       .lil_label
         = @doc["published"]
-        - @doc["tags"].each do |tag|
+        - @doc["tags"].sort.each do |tag|
           &mdash;
           %a{:href => tag}
             = tag
@@ -150,7 +150,7 @@ __END__
             = baby_doc["value"]["title"]
       .lil_label
         = baby_doc["value"]["published"]
-        - baby_doc["value"]["tags"].each do |tag|
+        - baby_doc["value"]["tags"].sort.each do |tag|
           &mdash; 
           - if (params[:id] == tag)
             = tag
@@ -161,7 +161,8 @@ __END__
         %img{:src => "/images/thumbs/#{baby_doc["value"]["id"]}.png", :class => "thumb", :alt => baby_doc["value"]["id"]}
       = markdown(baby_doc["value"]["teaser"]).split(' ')[0,20].join(' ')
       %a{:href => baby_doc["value"]["id"]}
-        &hellip;
+        %em
+          &hellip;
 
 @@ crash_n_burn
 %html

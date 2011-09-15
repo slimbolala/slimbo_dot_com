@@ -62,7 +62,7 @@
 .panel {
   float: left;
   width: 271;                 /* 606/2 - 16 */
-  height: 123;
+  height: 165;
   margin: 0em 2em 2em 0em;
 }
 .small, blockquote, .panel {
@@ -128,8 +128,8 @@ img {
   width: 374px;
 }
 .thumb {
-  width: 68px;
-  height: 68px;
+  width: 100px;
+  height: 100px;
   margin: 0em 1em 1em 0em;
 }
 .lil_thumb {
