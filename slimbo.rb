@@ -140,6 +140,7 @@ __END__
           %a{:href => tag}
             = tag
       #body= markdown(@doc['body'])
+      .clear 
   - @baby_docs.each do |baby_doc|
     .panel
       %a{:href => baby_doc["value"]["id"]}

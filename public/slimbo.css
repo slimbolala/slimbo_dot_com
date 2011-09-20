@@ -40,7 +40,7 @@
   margin: 0em 0em 1em 0em;
 }
 .big_panel {
-  padding: 0em 2em 0em 0em;
+  padding: 0em 2em 2em 0em;
 }
 .big_panel p {
   line-height: 1.4em;
@@ -132,6 +132,11 @@ img {
   height: 100px;
   margin: 0em 1em 1em 0em;
 }
+.big_thumb {
+  width: 232px;
+  height: 232px;
+  padding: 0em 1em 1em 0em;
+}
 .lil_thumb {
   width: 56px;
   margin: 0em 1em 1em 0em;
@@ -158,6 +163,9 @@ th {
   height: 0px;
   clear: left;
 }
+.big_panel #hr {
+  margin: 2em 0em;
+}
 .rssBody ul { 
   list-style: none; 
 }
@@ -183,4 +191,7 @@ th {
   color: #aaaaaa;
   margin: 1em 0em 1em 0em;
   padding: .309em 0em 0em 0em;
+}
+.clear {
+  clear: left;
 }
