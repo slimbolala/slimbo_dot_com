@@ -134,8 +134,8 @@ img {
 }
 .big_thumb {
   width: 232px;
-  height: 232px;
-  padding: 0em 1em 1em 0em;
+  height: 142px;
+  padding: 0em 1em .5em 0em;
 }
 .lil_thumb {
   width: 56px;
