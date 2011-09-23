@@ -164,7 +164,7 @@ __END__
       = markdown(baby_doc["value"]["teaser"]).split(' ')[0,25].join(' ')
       %a{:href => baby_doc["value"]["id"]}
         %em
-          &hellip;
+          &hellip;more&hellip;
 
 @@ crash_n_burn
 %html
