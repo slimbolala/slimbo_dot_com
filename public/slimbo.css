@@ -68,7 +68,11 @@ body {
   float: left;
   width: 271;                 /* 606/2 - 16 */
   height: 165;
-  margin: 0em 2em 1em 0em;
+  margin: 0em 2em 2em 0em;
+}
+.panel p {
+  margin: 0em;
+  padding: 0em;
 }
 .small, blockquote, .panel {
 	font-size: .809em;
