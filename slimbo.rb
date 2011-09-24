@@ -86,7 +86,7 @@ __END__
         %a{:href => "/about_me"}
           %em
             &hellip;
-        #hr
+        #mild_hr
         %table
           %tr
             %th
@@ -106,7 +106,7 @@ __END__
             %td
               %a{:href => "https://github.com/slimbolala"}
                 github.com/slimbolala
-        #hr
+        #mild_hr
         .lil_label
           RSS:
         #slimbo_feed
@@ -141,7 +141,7 @@ __END__
             = tag
       #body= markdown(@doc['body'])
       .clear 
-      #hr
+      #mild_hr
   - @baby_docs.each do |baby_doc|
     .panel
       %a{:href => baby_doc["value"]["id"]}
