@@ -165,7 +165,6 @@ __END__
       %a{:href => baby_doc["value"]["id"]}
         %em
           &hellip;more&hellip;
-      #mild_hr
 
 @@ crash_n_burn
 %html
