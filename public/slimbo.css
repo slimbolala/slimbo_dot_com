@@ -5,13 +5,13 @@
   http://modularscale.com/scale/?px1=16&px2=8&ra1=1.618&ra2=0
 ----------------------*/
 body {
-  background-color: #cccccc;
+  background-color: #eeeeee;
 }
 #content { 
   width: 980px;               /* 606 + 374 */ 
   vertical-align: middle; 
   margin: 0em auto; 
-  padding: 0em 4em;
+  padding: 0em 3em;
   text-align: left; 
   font-size: 16px; 
   font-family: Georgia;
