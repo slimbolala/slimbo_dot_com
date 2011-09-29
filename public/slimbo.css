@@ -11,7 +11,7 @@ body {
   width: 980px;               /* 606 + 374 */ 
   vertical-align: middle; 
   margin: 0em auto; 
-  padding: 0em 3em;
+  padding: 0em 8em;
   text-align: left; 
   font-size: 16px; 
   font-family: Georgia;
@@ -79,6 +79,9 @@ body {
 }
 .small, blockquote, .panel {
 	font-size: .809em;
+}
+.caption {
+  clear:left;
 }
 #sidebar {
   width: 342px;               /* 374 - 32px */
@@ -208,6 +211,33 @@ th {
   color: #aaaaaa;
   margin: 1em 0em 1em 0em;
   padding: .309em 0em 0em 0em;
+}
+.caption {
+  font-weight: normal;
+  font-style: italic;
+  font-size: .809em;
+  color: #aaaaaa;
+  margin: 0em;
+  padding: 0em 1em 0em 0em;
+}
+.image_with_caption {
+  float: left;
+  clear: left;
+  position: relative;
+}
+.image_with_caption .caption {
+  position: absolute;
+  width: 5em;
+  left: -6em;
+  text-align: right;
+}
+.image_with_caption img {
+  clear: left;
+  float: left;
+  top: 0px;
+  left: 0px;
+  width: 109px;
+  padding: 0em 2em 1em 1em;
 }
 .clear {
   clear: left;
