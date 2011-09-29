@@ -72,7 +72,23 @@ body {
   width: 271;                 /* 606/2 - 16 */
   height: 165;
   margin: 0em 2em 2em 0em;
+  border-bottom: 1px solid #eeeeee;
 }
+#nav_item {
+  float: left;
+  padding: .7em 0em 0em .618em;
+}
+#nav_spacer {
+  float:left;
+  width: 5.545em;
+  height: 2em;
+}
+#main {
+  width: 601px;               /* 980/1.618 */ 
+  float: left;
+  margin: 0em 0em 1em 0em;
+}
+.big_}
 .panel p {
   margin: 0em;
   padding: 0em;

@@ -152,7 +152,7 @@ __END__
             = baby_doc["value"]["title"]
       %a{:href => baby_doc["value"]["id"]}
         %img{:src => "/images/thumbs/#{baby_doc["value"]["id"]}.png", :class => "thumb", :alt => baby_doc["value"]["title"]}
-      = markdown(baby_doc["value"]["teaser"]).split(' ')[0,25].join(' ')
+      = markdown(baby_doc["value"]["teaser"]).split(' ')[0,20].join(' ')
       %a{:href => baby_doc["value"]["id"]}
         %em
           &hellip;more&hellip;
