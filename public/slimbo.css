@@ -126,13 +126,13 @@ h2 {
 }
 h3 {
   font-size: 1.309em;
-  margin: 0em 0em 1em 0em;
+  margin: 1.8em 0em .68em 0em;
 }
 h4 {
   margin: 1.809em 0em .809em 0em;
 }
 p {
-  margin: 0em 0em 1.809em 0em;
+  margin: 0em 0em 1.3em 0em;
 }
 img {
   float: left;
@@ -227,8 +227,8 @@ th {
 }
 .image_with_caption .caption {
   position: absolute;
-  width: 5em;
-  left: -6em;
+  width: 7em;
+  left: -8em;
   text-align: right;
 }
 .image_with_caption img {
