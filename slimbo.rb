@@ -81,7 +81,7 @@ __END__
           %h3
             = @about_me['title']
         %a{:href => "/about_me"}
-          %img{:src => "/images/slimbo_thumb.png", :class => "lil_thumb", :alt => "Slimbo"}
+          %img{:src => "/images/thumbs/about_me.png", :class => "lil_thumb", :alt => "Slimbo"}
         = markdown(@about_me['body']).split(' ')[0,30].join(' ').gsub(/<\/?[^>]*>/, "")
         %a{:href => "/about_me"}
           %em
