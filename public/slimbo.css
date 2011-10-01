@@ -66,8 +66,8 @@ body {
 .panel {
   float: left;
   width: 271;                 /* 606/2 - 16 */
-  height: 155;
-  margin: 0em 2em 3em 0em;
+  height: 175;
+  margin: 0em 2em 2em 0em;
 }
 #nav_item {
   float: left;
@@ -155,7 +155,7 @@ img {
 }
 .thumb {
   width: 110px;
-  margin: 0em 1em 1em 0em;
+  margin: 0em 1em 2em 0em;
 }
 .big_thumb {
   width: 232px;
