@@ -20,7 +20,7 @@ body {
 #header {
   padding: 1em 0em .382em 0em;
 }
-#nav, #footer, #sidebar {
+#nav, #footer, #sidebar, .footnote {
   font-size: .809em;
 }
 #nav {
@@ -253,7 +253,7 @@ th {
   top: 0px;
   left: 0px;
   width: 109px;
-  padding: 0em 2em 1em 1em;
+  padding: 0em 2em 1em 0em;
 }
 .clear {
   clear: left;

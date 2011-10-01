@@ -81,11 +81,11 @@ __END__
           %h3
             = @about_me['title']
         %a{:href => "/about_me"}
-          %img{:src => "/images/slimbo_thumb.png", :class => "lil_thumb", :alt => "Slimbo"}
-        = markdown(@about_me['body']).split(' ')[0,30].join(' ')
+          %img{:src => "/images/thumbs/about_me.png", :class => "lil_thumb", :alt => "Slimbo"}
+        = markdown(@about_me['body']).split(' ')[0,30].join(' ').gsub(/<\/?[^>]*>/, "")
         %a{:href => "/about_me"}
           %em
-            &hellip;
+            &hellip;more&hellip;
         #mild_hr
         %table
           %tr
@@ -152,7 +152,7 @@ __END__
             = baby_doc["value"]["title"]
       %a{:href => baby_doc["value"]["id"]}
         %img{:src => "/images/thumbs/#{baby_doc["value"]["id"]}.png", :class => "thumb", :alt => baby_doc["value"]["title"]}
-      = markdown(baby_doc["value"]["teaser"]).split(' ')[0,20].join(' ')
+      = markdown(baby_doc["value"]["teaser"]).split(' ')[0,20].join(' ').gsub(/<\/?[^>]*>/, "")
       %a{:href => baby_doc["value"]["id"]}
         %em
           &hellip;more&hellip;
