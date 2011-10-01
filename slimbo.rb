@@ -150,11 +150,9 @@ __END__
             = baby_doc["value"]["title"].split(' ')[0,4].join(' ') + '&hellip;'
           - else
             = baby_doc["value"]["title"]
-        %img{:src => "/images/thumbs/#{baby_doc["value"]["id"]}.png", :class => "thumb", :alt => baby_doc["value"]["title"]}
       = markdown(baby_doc["value"]["teaser"]).split(' ')[0,20].join(' ').gsub(/<\/?[^>]*>/, "")
-      %a{:href => baby_doc["value"]["id"]}
-        %em
-          &hellip;more&hellip;
+      &hellip;
+      %img{:src => "/images/thumbs/#{baby_doc["value"]["id"]}.png", :class => "thumb", :alt => baby_doc["value"]["title"]}
       .lil_label
         = baby_doc["value"]["published"]
         - baby_doc["value"]["tags"].sort.each do |tag|

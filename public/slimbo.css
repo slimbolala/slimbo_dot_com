@@ -58,19 +58,15 @@ body {
   margin: 0em 0em .7em 0em;
 }
 .panel h3 {
-  margin: 0em 0em 0.5em 0em;
+  margin: 0em 0em .5em 0em;
 }
 .panel .lil_label {
-  clear: left;
-  margin: .2em 0em 0em 0em;
-  padding: 0em 0em 0.8em 0em;
-}
-.panel .thumb {
+  margin: .5em 0em 0em 0em;
 }
 .panel {
   float: left;
   width: 271;                 /* 606/2 - 16 */
-  height: 165;
+  height: 155;
   margin: 0em 2em 2em 0em;
   border-bottom: 1px solid #eeeeee;
 }
@@ -159,8 +155,7 @@ img {
   width: 374px;
 }
 .thumb {
-  width: 100px;
-  height: 100px;
+  width: 130px;
   margin: 0em 1em .5em 0em;
 }
 .big_thumb {
