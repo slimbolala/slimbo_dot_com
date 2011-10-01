@@ -145,6 +145,7 @@ __END__
   - @baby_docs.each do |baby_doc|
     .panel
       %a{:href => baby_doc["value"]["id"]}
+        :img{:src => "/images/thumbs/#{baby_doc["value"]["id"]}.png", :class => "thumb", :alt => baby_doc["value"]["title"]}
         %h3
           - if baby_doc["value"]["title"].split(' ').length > 4
             = baby_doc["value"]["title"].split(' ')[0,4].join(' ') + '&hellip;'
@@ -152,7 +153,6 @@ __END__
             = baby_doc["value"]["title"]
       = markdown(baby_doc["value"]["teaser"]).split(' ')[0,20].join(' ').gsub(/<\/?[^>]*>/, "")
       &hellip;
-      %img{:src => "/images/thumbs/#{baby_doc["value"]["id"]}.png", :class => "thumb", :alt => baby_doc["value"]["title"]}
       .lil_label
         = baby_doc["value"]["published"]
         - baby_doc["value"]["tags"].sort.each do |tag|
