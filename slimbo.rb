@@ -81,11 +81,11 @@ __END__
           %h3
             = @about_me['title']
         %a{:href => "/about_me"}
-          %img{:src => "/images/thumbs/about_me.png", :class => "lil_thumb", :alt => "Slimbo"}
+          %img{:src => "/images/slimbo_thumb.png", :class => "lil_thumb", :alt => "Slimbo"}
         = markdown(@about_me['body']).split(' ')[0,30].join(' ').gsub(/<\/?[^>]*>/, "")
         %a{:href => "/about_me"}
           %em
-            &hellip;more&hellip;
+            &hellip;
         #mild_hr
         %table
           %tr
@@ -145,14 +145,16 @@ __END__
   - @baby_docs.each do |baby_doc|
     .panel
       %a{:href => baby_doc["value"]["id"]}
-        :img{:src => "/images/thumbs/#{baby_doc["value"]["id"]}.png", :class => "thumb", :alt => baby_doc["value"]["title"]}
         %h3
           - if baby_doc["value"]["title"].split(' ').length > 4
             = baby_doc["value"]["title"].split(' ')[0,4].join(' ') + '&hellip;'
           - else
             = baby_doc["value"]["title"]
+        %img{:src => "/images/thumbs/#{baby_doc["value"]["id"]}.png", :class => "thumb", :alt => baby_doc["value"]["title"]}
       = markdown(baby_doc["value"]["teaser"]).split(' ')[0,20].join(' ').gsub(/<\/?[^>]*>/, "")
-      &hellip;
+      %a{:href => baby_doc["value"]["id"]}
+        %em
+          &hellip;more&hellip;
       .lil_label
         = baby_doc["value"]["published"]
         - baby_doc["value"]["tags"].sort.each do |tag|
@@ -162,6 +164,7 @@ __END__
           - else
             %a{:href => tag} 
               = tag
+      #mild_hr
 
 @@ crash_n_burn
 %html
